@@ -1,0 +1,1122 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Taller de exploración - Dinámica institucional</title>
+    <link rel="stylesheet" href="styles.css?v=20260605ah" />
+    <link rel="stylesheet" href="show.css?v=20260616a" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <img src="assets/brand/exeltis-logo-color.png" alt="" />
+          </div>
+          <div class="brand-copy">
+            <strong>Taller de exploración</strong>
+            <span>Dinámica institucional</span>
+          </div>
+        </div>
+
+        <div class="module-switcher">
+          <label for="moduleSelect">Módulo</label>
+          <select id="moduleSelect"></select>
+        </div>
+
+        <nav class="view-tabs" aria-label="Vistas">
+          <button class="tab-button is-active" type="button" data-view="event">Evento</button>
+          <button class="tab-button" type="button" data-view="control">Panel</button>
+          <button class="tab-button" type="button" data-view="history">Historial</button>
+        </nav>
+
+        <div class="top-actions">
+          <button class="icon-button" id="showModeBtn" type="button" aria-label="Entrar a vista show">Vista show</button>
+          <button class="icon-button" id="audioToggle" type="button" title="Audio activado" aria-label="Audio activado">
+            <span class="audio-dot" aria-hidden="true"></span>
+            <span id="audioLabel">Audio</span>
+          </button>
+          <a class="doc-link" href="docs/instructivo.pdf" target="_blank" rel="noreferrer">Instructivo</a>
+        </div>
+      </header>
+
+      <section class="view view-event is-visible" id="eventView" aria-labelledby="eventTitle">
+        <button class="show-exit-button" id="showExitBtn" type="button" hidden>Salir</button>
+        <section class="stage-band">
+          <div class="stage-header">
+            <div>
+              <p class="stage-kicker">Modo evento</p>
+              <h1 id="eventTitle">Selecciona pantallas Participantes y PPI</h1>
+            </div>
+            <div class="mode-controls" aria-label="Modo de sorteo">
+              <button class="mode-toggle is-active" id="participantsModeBtn" type="button" aria-pressed="true">Personas</button>
+              <button class="mode-toggle is-active" id="presentationsModeBtn" type="button" aria-pressed="true">PPIs</button>
+            </div>
+            <div class="round-counter">
+              <span>Ronda</span>
+              <strong id="roundCounter">1</strong>
+            </div>
+          </div>
+
+          <div class="module-cards">
+            <button class="module-card is-active" id="participantsCardBtn" type="button" aria-pressed="true">
+              <span class="module-card-label">Personas</span>
+              <span class="module-card-status" id="participantsCardStatus">Activo</span>
+            </button>
+            <button class="module-card is-active" id="presentationsCardBtn" type="button" aria-pressed="true">
+              <span class="module-card-label">PPIs</span>
+              <span class="module-card-status" id="presentationsCardStatus">Activo</span>
+            </button>
+          </div>
+
+          <div class="stage-grid">
+            <section class="participant-stage" aria-labelledby="participantTitle">
+              <div class="section-heading">
+                <div class="heading-copy">
+                  <h2 id="participantTitle">Participantes</h2>
+                  <span id="participantCount">0</span>
+                </div>
+                <button class="card-close" id="hideParticipantsBtn" type="button" aria-label="Ocultar participantes" title="Ocultar participantes">×</button>
+              </div>
+              <div class="orb-field" id="participantField"></div>
+              <div class="selection-readout">
+                <span>Selección actual</span>
+                <strong id="participantReadout">???</strong>
+              </div>
+            </section>
+
+            <section class="roulette-stage" aria-labelledby="rouletteTitle">
+              <div class="section-heading">
+                <div class="heading-copy">
+                  <h2 id="rouletteTitle">Ruleta PPI</h2>
+                  <span id="presentationCount">0</span>
+                </div>
+                <button class="card-close" id="hidePresentationsBtn" type="button" aria-label="Ocultar ruleta PPI" title="Ocultar ruleta PPI">×</button>
+              </div>
+              <div class="wheel-wrap">
+                <div class="wheel-stack">
+                  <div class="wheel-pointer" aria-hidden="true"></div>
+                  <div class="wheel" id="wheel" aria-hidden="true">
+                    <div class="wheel-center">
+                      <img class="wheel-logo" src="assets/brand/exeltis-logo-color.png" alt="Exeltis" />
+                      <span id="wheelCenterLabel">PPI</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="selection-readout">
+                <span>PPI</span>
+                <strong id="presentationReadout">???</strong>
+              </div>
+            </section>
+          </div>
+
+          <div class="show-reveal" id="showReveal" aria-live="polite">
+            <span id="showRevealEyebrow">Taller de exploración</span>
+            <strong id="showRevealName">Listos para jugar</strong>
+            <em id="showRevealMeta">Presiona Jugar ronda para iniciar</em>
+          </div>
+
+          <div class="event-actions">
+            <button class="primary-action show-round-action" id="playRoundBtn" type="button">Jugar ronda</button>
+            <button class="primary-action" id="drawParticipantBtn" type="button">Sortear participante</button>
+            <button class="secondary-action" id="spinWheelBtn" type="button">Girar ruleta</button>
+            <button class="secondary-action" id="newRoundBtn" type="button">Nueva ronda</button>
+            <button class="quiet-action" id="finishEventBtn" type="button">Finalizar evento</button>
+          </div>
+        </section>
+
+        <aside class="result-panel" aria-live="polite">
+          <div class="result-head">
+            <span>Resultado</span>
+            <button class="quiet-action compact" id="resetEventBtn" type="button">Reiniciar</button>
+          </div>
+          <div class="winner-card" id="winnerCard">
+            <p>Participante</p>
+            <strong id="winnerName">???</strong>
+          </div>
+          <div class="winner-card accent" id="presentationCard">
+            <p>PPI</p>
+            <strong id="winnerPresentation">???</strong>
+          </div>
+          <div class="topic-box" id="topicBox">
+            <h3>Temas</h3>
+            <ul id="topicList"></ul>
+            <img id="presentationImage" alt="Imagen asociada al PPI" hidden />
+          </div>
+          <div class="recent-history">
+            <h3>Últimas rondas</h3>
+            <ol id="recentHistoryList"></ol>
+          </div>
+        </aside>
+
+      </section>
+
+      <div class="show-result-modal" id="showResultModal" aria-hidden="true">
+        <div class="show-result-backdrop"></div>
+        <section class="show-result-card" role="dialog" aria-modal="true" aria-labelledby="showResultTitle">
+          <div class="show-result-brand">
+            <img src="assets/brand/exeltis-logo-color.png" alt="Exeltis" />
+            <span>Taller de exploración</span>
+          </div>
+          <div class="show-result-copy">
+            <p>Resultado de la ronda</p>
+            <h2 id="showResultTitle">Selección final</h2>
+          </div>
+          <div class="show-result-grid">
+            <div class="show-result-summary">
+              <article>
+                <span>Participante seleccionado</span>
+                <strong id="showResultParticipant">???</strong>
+              </article>
+              <article class="accent">
+                <span>PPI seleccionado</span>
+                <strong id="showResultPpi">???</strong>
+                <span class="result-detail" id="showResultSede"></span>
+                <span class="result-detail" id="showResultEspecialidad"></span>
+                <span class="result-detail result-categoria" id="showResultCategoria"></span>
+              </article>
+            </div>
+            <figure class="show-result-image-wrap" id="showResultImageWrap">
+              <img id="showResultImage" alt="Imagen relacionada al PPI" hidden />
+              <figcaption id="showResultImageEmpty">Sin imagen asociada</figcaption>
+            </figure>
+          </div>
+          <div class="show-result-actions">
+            <button class="secondary-action" id="closeShowResultBtn" type="button">Cerrar</button>
+            <button class="primary-action" id="modalNewRoundBtn" type="button">Nueva ronda</button>
+          </div>
+        </section>
+      </div>
+
+      <section class="view view-control" id="controlView" aria-labelledby="controlTitle">
+        <div class="control-header">
+          <div>
+            <p class="stage-kicker">Panel de control</p>
+            <h1 id="controlTitle">Administración del módulo</h1>
+          </div>
+          <div class="control-actions">
+            <button class="secondary-action" id="addModuleBtn" type="button">Nuevo módulo</button>
+            <button class="quiet-action" id="deleteModuleBtn" type="button">Eliminar módulo</button>
+          </div>
+        </div>
+
+        <section class="control-panel data-panel">
+          <div class="panel-title">
+            <h2>Datos</h2>
+            <span>Local</span>
+          </div>
+          <div class="data-actions">
+            <button class="secondary-action" id="exportDataBtn" type="button">Exportar JSON</button>
+            <label class="secondary-action file-action" for="importDataInput">
+              Importar JSON
+              <input id="importDataInput" type="file" accept="application/json" />
+            </label>
+            <button class="quiet-action" id="clearLocalDataBtn" type="button">Borrar cambios locales</button>
+          </div>
+        </section>
+
+        <div class="control-grid">
+          <section class="control-panel module-panel">
+            <div class="panel-title">
+              <h2>Módulo activo</h2>
+              <span id="activeModuleMeta"></span>
+            </div>
+            <label class="field-label" for="moduleNameInput">Nombre del módulo</label>
+            <div class="inline-form">
+              <input id="moduleNameInput" type="text" autocomplete="off" />
+              <button class="secondary-action" id="saveModuleNameBtn" type="button">Guardar</button>
+            </div>
+            <div class="module-list" id="moduleList"></div>
+          </section>
+
+          <section class="control-panel">
+            <div class="panel-title">
+              <h2>Participantes</h2>
+              <span id="participantAdminCount">0</span>
+            </div>
+            <form class="inline-form" id="participantForm">
+              <input id="participantNameInput" type="text" placeholder="Nombre del participante" autocomplete="off" />
+              <button class="primary-action" type="submit">Agregar</button>
+            </form>
+            <textarea id="bulkParticipantsInput" rows="5" placeholder="Pega varios nombres, uno por línea"></textarea>
+            <button class="secondary-action full-width" id="bulkParticipantsBtn" type="button">Agregar lista</button>
+            <div class="people-list" id="participantsList"></div>
+          </section>
+
+          <section class="control-panel presentation-panel">
+            <div class="panel-title">
+              <h2>PPIs</h2>
+              <span id="presentationAdminCount">0</span>
+            </div>
+            <form class="presentation-form" id="presentationForm">
+              <input id="presentationTitleInput" type="text" placeholder="Nombre del PPI" autocomplete="off" />
+              <input id="presentationDoctorInput" type="text" placeholder="Dr. Nombre Apellido" autocomplete="off" />
+              <input id="presentationSedeInput" type="text" placeholder="Sede (ej: León, Guanajuato)" autocomplete="off" />
+              <input id="presentationEspecialidadInput" type="text" placeholder="Especialidad (ej: Ginecología OB)" autocomplete="off" />
+              <input id="presentationCategoriaInput" type="text" placeholder="Categoría (ej: VIP, AA)" autocomplete="off" />
+              <textarea id="presentationTopicsInput" rows="4" placeholder="Temas, uno por línea"></textarea>
+              <label class="file-field" for="presentationImageInput">
+                <span>Imagen relacionada</span>
+                <input id="presentationImageInput" type="file" accept="image/*" />
+              </label>
+              <div class="form-actions">
+                <button class="primary-action" id="savePresentationBtn" type="submit">Guardar PPI</button>
+                <button class="quiet-action" id="cancelPresentationEditBtn" type="button" hidden>Cancelar</button>
+              </div>
+            </form>
+            <div class="presentation-list" id="presentationsList"></div>
+          </section>
+
+        </div>
+      </section>
+
+      <section class="view view-history" id="historyView" aria-labelledby="historyTitle">
+        <div class="control-header">
+          <div>
+            <p class="stage-kicker">Historial</p>
+            <h1 id="historyTitle">Rondas del módulo</h1>
+          </div>
+          <button class="quiet-action" id="clearHistoryBtn" type="button">Limpiar historial</button>
+        </div>
+        <div class="history-table-wrap">
+          <table class="history-table">
+            <thead>
+              <tr>
+                <th>Ronda</th>
+                <th>Participante</th>
+                <th>PPI</th>
+                <th>Fecha</th>
+              </tr>
+            </thead>
+            <tbody id="historyTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+      <div class="img-lightbox" id="imgLightbox" hidden>
+        <div class="img-lightbox-backdrop"></div>
+        <div class="img-lightbox-body">
+          <img id="imgLightboxImg" alt="Imagen PPI" />
+          <button class="img-lightbox-close" id="imgLightboxClose" type="button">&times;</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="sx-root" id="sxRoot" aria-hidden="true">
+      <div class="sx-stage" aria-hidden="true">
+        <div class="sx-bg"></div>
+        <div class="sx-led left"></div>
+        <div class="sx-led right"></div>
+        <div class="sx-beam b1"></div>
+        <div class="sx-beam b2"></div>
+        <div class="sx-beam b3"></div>
+        <div class="sx-beam b4"></div>
+        <div class="sx-floor"></div>
+        <div class="sx-vignette"></div>
+      </div>
+
+      <header class="sx-topbar">
+        <img class="sx-logo" src="assets/brand/exeltis-logo-color-white.png" alt="Exeltis" />
+        <div class="sx-bar-right">
+          <span class="sx-chip accent" id="sxModuleChip">Ronda 1</span>
+          <button class="sx-icon-btn" id="sxAudioBtn" type="button">Audio</button>
+          <button class="sx-icon-btn" id="sxExitBtn" type="button">Salir</button>
+        </div>
+      </header>
+
+      <div class="sx-confetti" id="sxConfetti" aria-hidden="true"></div>
+      <div class="sx-curtain" id="sxCurtain" aria-hidden="true"></div>
+
+      <!-- Escena 1: Splash -->
+      <section class="sx-scene sx-splash is-active" data-scene="splash">
+        <div class="sx-rays" aria-hidden="true"></div>
+        <div class="sx-presents">
+          <p class="sx-eyebrow">Exeltis presenta</p>
+          <h1 class="sx-title gold sx-game-title">Taller de exploración</h1>
+          <p class="sx-game-sub" hidden>¿Están listos para jugar?</p>
+        </div>
+        <div class="sx-cta">
+          <button class="sx-gold-btn" id="sxPlayBtn" type="button"><span class="sx-play-ico"></span>Jugar</button>
+          <p class="sx-meta" id="sxSplashMeta" hidden></p>
+        </div>
+        <p class="sx-status" id="sxSplashHint"></p>
+      </section>
+
+      <!-- Escena 2: Participante -->
+      <section class="sx-scene sx-participant" data-scene="participant">
+        <div class="sx-head">
+          <p class="sx-eyebrow" id="sxPEyebrow"></p>
+          <h1 class="sx-title" id="sxPTitle">¿Quién será?</h1>
+        </div>
+        <div class="sx-body">
+          <div class="sx-tombola">
+            <div class="sx-sphere">
+              <div class="sx-orbs" id="sxOrbs"></div>
+            </div>
+            <div class="sx-stand"></div>
+          </div>
+          <div class="sx-namecol">
+            <p class="sx-eyebrow amber" id="sxPLabel">Las esferas están girando…</p>
+            <div class="sx-plate">
+              <div class="sx-bulbs" id="sxPBulbs"></div>
+              <div class="sx-plate-inner">
+                <strong class="sx-plate-name" id="sxPName">???</strong>
+              </div>
+            </div>
+            <div class="sx-candidates" id="sxCandidates"></div>
+            <div class="sx-status">
+              <span class="sx-steps" id="sxPSteps"></span>
+              <span id="sxPNext"></span>
+            </div>
+          </div>
+        </div>
+        <div class="sx-foot">
+          <button class="sx-gold-btn sm" id="sxPContinueBtn" type="button" hidden>Girar la ruleta</button>
+          <button class="sx-ghost-btn" id="sxPRetryBtn" type="button" hidden>Elegir otro</button>
+          <button class="sx-ghost-btn" id="sxPSkipBtn" type="button">Saltar animación</button>
+        </div>
+      </section>
+
+      <!-- Escena 3: Ruleta -->
+      <section class="sx-scene sx-wheel" data-scene="wheel">
+        <div class="sx-head">
+          <p class="sx-eyebrow">Ruleta PPI</p>
+          <h1 class="sx-title">Gira la ruleta</h1>
+        </div>
+        <div class="sx-body">
+          <div class="sx-wheel-zone">
+            <div class="sx-wheel-halo"></div>
+            <div class="sx-wheel-spin" id="sxWheelSpin"></div>
+            <div class="sx-wheel-ring" id="sxWheelRing"></div>
+            <div class="sx-wheel-center" aria-hidden="true">
+              <img src="assets/brand/exeltis-logo-color.png" alt="">
+              <span>PPI</span>
+            </div>
+            <svg class="sx-wheel-pointer" viewBox="0 0 60 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6 6 L54 6 L30 74 Z" fill="#f0c75e" stroke="#6b4a08" stroke-width="3"/>
+              <circle cx="30" cy="22" r="7" fill="#b72f91" stroke="#fdf0bd" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="sx-sidecol">
+            <div class="sx-plate sx-turn" id="sxTurnWrap" hidden>
+              <div class="sx-plate-inner">
+                <span class="sx-plate-label">Turno de</span>
+                <strong class="sx-plate-name" id="sxTurnName">—</strong>
+              </div>
+            </div>
+            <div class="sx-live">
+              <p class="sx-eyebrow">PPI en juego…</p>
+              <strong id="sxLiveName">—</strong>
+            </div>
+            <div class="sx-status" hidden>
+              <span class="sx-steps" id="sxWSteps"></span>
+              <span id="sxWCount">PPIs en la ruleta</span>
+            </div>
+          </div>
+        </div>
+        <div class="sx-foot">
+          <button class="sx-gold-btn sm" id="sxWContinueBtn" type="button" hidden>Ver resultado</button>
+          <button class="sx-ghost-btn" id="sxWRetryBtn" type="button" hidden>Elegir otro</button>
+          <button class="sx-ghost-btn" id="sxWSkipBtn" type="button">Saltar animación</button>
+        </div>
+      </section>
+
+      <!-- Escena 4: Resultado -->
+      <section class="sx-scene sx-result" data-scene="result">
+        <div class="sx-stars" aria-hidden="true">
+          <span style="left:16%; top:20%; font-size:40px">★</span>
+          <span style="left:82%; top:16%; font-size:28px; animation-delay:.4s">★</span>
+          <span style="left:8%; top:64%; font-size:24px; animation-delay:.8s">★</span>
+          <span style="left:88%; top:60%; font-size:34px; animation-delay:1.2s">★</span>
+        </div>
+        <div class="sx-head" hidden>
+          <p class="sx-eyebrow amber">¡Tenemos resultado!</p>
+          <h1 class="sx-title gold">¡Felicidades!</h1>
+        </div>
+        <div class="sx-result-card" id="sxResultCard">
+          <div class="sx-rc-inner">
+            <div class="sx-rc-copy">
+              <div class="sx-rc-who">
+                <span>Participante</span>
+                <strong id="sxRWho">—</strong>
+              </div>
+              <div class="sx-rc-sep" hidden>Presentará</div>
+              <div class="sx-rc-what">
+                <span></span>
+                <strong id="sxRWhat">—</strong>
+                <div class="sx-rc-details">
+                  <span id="sxRSede"></span>
+                  <span id="sxREspecialidad"></span>
+                  <span class="sx-rc-cat" id="sxRCategoria"></span>
+                </div>
+              </div>
+            </div>
+            <figure class="sx-photo">
+              <img id="sxRImg" alt="Imagen del PPI" />
+              <figcaption>Imagen del PPI</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="sx-actions">
+          <button class="sx-gold-btn sm" id="sxNewRoundBtn" type="button"><span class="sx-play-ico"></span>Nueva ronda</button>
+          <button class="sx-ghost-btn" id="sxFinishBtn" type="button">Finalizar evento</button>
+        </div>
+      </section>
+    </div>
+
+    <script id="seed-data" type="application/json">
+      
+      
+      {
+        "activeModuleId": "modulo-1",
+        "modules": [
+          {
+            "id": "modulo-1",
+            "name": "Ginecología 2",
+            "participants": [
+              {
+                "id": "ginecologia-2-participante-001",
+                "name": "SANCHEZ HURTADO MOISES"
+              },
+              {
+                "id": "ginecologia-2-participante-002",
+                "name": "OLVERA MORALES MARIA EUGENIA"
+              },
+              {
+                "id": "ginecologia-2-participante-003",
+                "name": "WELSH PALACIOS JENNIFER"
+              },
+              {
+                "id": "ginecologia-2-participante-004",
+                "name": "RANGEL LOPEZ MARIA FERNANDA"
+              },
+              {
+                "id": "ginecologia-2-participante-005",
+                "name": "APARICIO CANO JOSE MIGUEL"
+              },
+              {
+                "id": "ginecologia-2-participante-006",
+                "name": "VELAZQUEZ MARQUEZ MARIA FERNANDA"
+              },
+              {
+                "id": "ginecologia-2-participante-007",
+                "name": "ALCANTARA SALAZAR SARA AHYDEE"
+              },
+              {
+                "id": "ginecologia-2-participante-008",
+                "name": "GONZALEZ MARTINEZ BELEN"
+              },
+              {
+                "id": "ginecologia-2-participante-009",
+                "name": "LUNA MARTINEZ ALBERTO FABIAN"
+              },
+              {
+                "id": "ginecologia-2-participante-010",
+                "name": "SALAZAR PALACIOS ROBERTO MANUEL"
+              },
+              {
+                "id": "ginecologia-2-participante-011",
+                "name": "HERNANDEZ LOPEZ FRANCISCO JAVIER"
+              },
+              {
+                "id": "ginecologia-2-participante-012",
+                "name": "ECHANOVE MORA PAULINA"
+              },
+              {
+                "id": "ginecologia-2-participante-013",
+                "name": "ARREDONDO GOMEZ MARIBEL IVON"
+              },
+              {
+                "id": "ginecologia-2-participante-014",
+                "name": "SEGOVIANO FALCON VIRGINIA"
+              },
+              {
+                "id": "ginecologia-2-participante-015",
+                "name": "BATHA MARTINEZ DANIEL"
+              },
+              {
+                "id": "ginecologia-2-participante-016",
+                "name": "BALAN GONZALEZ LAURA ARMENIA"
+              },
+              {
+                "id": "ginecologia-2-participante-017",
+                "name": "HERNANDEZ BENITEZ MARIA ISABEL"
+              },
+              {
+                "id": "ginecologia-2-participante-018",
+                "name": "SANTIAGO VARGAS MARISELA"
+              },
+              {
+                "id": "ginecologia-2-participante-019",
+                "name": "MORALES IBARRA PAOLA MARITZA"
+              },
+              {
+                "id": "ginecologia-2-participante-020",
+                "name": "RAMIREZ HERRERA MITZY FICEL"
+              },
+              {
+                "id": "ginecologia-2-participante-021",
+                "name": "LOPEZ SALGADO LORENA"
+              },
+              {
+                "id": "ginecologia-2-participante-022",
+                "name": "GARCIA SOLIS ABRAHAM TEMISTOCLES"
+              },
+              {
+                "id": "ginecologia-2-participante-023",
+                "name": "MATA TORRES GUSTAVO"
+              },
+              {
+                "id": "ginecologia-2-participante-024",
+                "name": "CARLON VEGA ALEJANDRA MARGARITA"
+              },
+              {
+                "id": "ginecologia-2-participante-025",
+                "name": "VIGIL ALVAREZ ILIANA RAQUEL"
+              },
+              {
+                "id": "ginecologia-2-participante-026",
+                "name": "ALVARADO MOLINA MARIA GABRIELA"
+              },
+              {
+                "id": "ginecologia-2-participante-027",
+                "name": "GOMEZ PEREA KARIM YAREH"
+              },
+              {
+                "id": "ginecologia-2-participante-028",
+                "name": "SANCHEZ GUEVARA HUMBERTO JESUS"
+              },
+              {
+                "id": "ginecologia-2-participante-029",
+                "name": "ZEPEDA NIETO KARLA MICHEL"
+              },
+              {
+                "id": "ginecologia-2-participante-030",
+                "name": "HERNANDEZ SALAZAR ANA ZULEM"
+              },
+              {
+                "id": "ginecologia-2-participante-031",
+                "name": "PEREZ HERNANDEZ ANABELL"
+              },
+              {
+                "id": "ginecologia-2-participante-032",
+                "name": "DAVILA MARTINEZ MONICA"
+              },
+              {
+                "id": "ginecologia-2-participante-033",
+                "name": "VALDES PACHECO MARIBEL"
+              },
+              {
+                "id": "ginecologia-2-participante-034",
+                "name": "IZASMENDI ROBLES MARIA EUGENIA"
+              },
+              {
+                "id": "ginecologia-2-participante-035",
+                "name": "AGUIRRE BAUTISTA ALEJANDRA"
+              },
+              {
+                "id": "ginecologia-2-participante-036",
+                "name": "ANGELES DIAZ JULIO CESAR"
+              },
+              {
+                "id": "ginecologia-2-participante-037",
+                "name": "MAGAÑA MERCADO MARIA DE LA LUZ"
+              },
+              {
+                "id": "ginecologia-2-participante-038",
+                "name": "NAVA MORENO OSCAR ISRAEL"
+              },
+              {
+                "id": "ginecologia-2-participante-039",
+                "name": "SANCHEZ VARGAS CESAR AGUSTIN"
+              },
+              {
+                "id": "ginecologia-2-participante-040",
+                "name": "BRITO GUZMAN MARIA DE LOURDES"
+              },
+              {
+                "id": "ginecologia-2-participante-041",
+                "name": "ZAVALA OLIVARES MARIO ALBERTO"
+              },
+              {
+                "id": "ginecologia-2-participante-042",
+                "name": "MARTINEZ HERNANDEZ ALBERTO DAMIAN"
+              },
+              {
+                "id": "ginecologia-2-participante-043",
+                "name": "CRISTO GONZALEZ DE LA LUZ ALEXIS"
+              },
+              {
+                "id": "ginecologia-2-participante-044",
+                "name": "AGUIRRE LEON DANIEL"
+              },
+              {
+                "id": "ginecologia-2-participante-045",
+                "name": "LARA MIMBRERA LARIZA LAURA"
+              },
+              {
+                "id": "ginecologia-2-participante-046",
+                "name": "DIAZ GONZALEZ JUAN"
+              },
+              {
+                "id": "ginecologia-2-participante-047",
+                "name": "ROMERO HERNANDEZ KAREN"
+              },
+              {
+                "id": "ginecologia-2-participante-048",
+                "name": "LOPEZ SALAZAR MYRIAM ROCIO"
+              },
+              {
+                "id": "ginecologia-2-participante-049",
+                "name": "RAMOS VELAZQUEZ ERIKA MARLENE"
+              },
+              {
+                "id": "ginecologia-2-participante-050",
+                "name": "BENAVIDES TIENDA RAMON"
+              },
+              {
+                "id": "ginecologia-2-participante-051",
+                "name": "ARMENTA RESENDIZ JACQUELINE"
+              },
+              {
+                "id": "ginecologia-2-participante-052",
+                "name": "BARAJAS VARGAS NOE ALEJANDRO"
+              },
+              {
+                "id": "ginecologia-2-participante-053",
+                "name": "GUTIERREZ NOVIA ESTEFANIA"
+              },
+              {
+                "id": "ginecologia-2-participante-054",
+                "name": "CASTRO JIMENEZ ALEJANDRO"
+              },
+              {
+                "id": "ginecologia-2-participante-055",
+                "name": "BECERRA FERNANDEZ ALFONSO"
+              },
+              {
+                "id": "ginecologia-2-participante-056",
+                "name": "MORENO RIOS LAURA ELENA"
+              },
+              {
+                "id": "ginecologia-2-participante-057",
+                "name": "MONTERRUBIO RUBIO ABEL"
+              },
+              {
+                "id": "ginecologia-2-participante-058",
+                "name": "MADRIGAL GONZALEZ JULIA EDITH"
+              },
+              {
+                "id": "ginecologia-2-participante-059",
+                "name": "QUEZADA RUEDA JOSE CRUZ"
+              },
+              {
+                "id": "ginecologia-2-participante-060",
+                "name": "LOPEZ DAVALOS MONICA RAQUEL"
+              },
+              {
+                "id": "ginecologia-2-participante-061",
+                "name": "GONZALEZ GODOY ELIZABETH"
+              },
+              {
+                "id": "ginecologia-2-participante-062",
+                "name": "JACOTT ORTEGA PAOLA GABRIELA"
+              },
+              {
+                "id": "ginecologia-2-participante-063",
+                "name": "JARAMILLO SANTILLAN KARLA GABRIELA"
+              },
+              {
+                "id": "ginecologia-2-participante-064",
+                "name": "ARCE CORONA ESMERALDA"
+              },
+              {
+                "id": "ginecologia-2-participante-065",
+                "name": "ARRIOLA BECERRA CLARA MARGARITA"
+              },
+              {
+                "id": "ginecologia-2-participante-066",
+                "name": "TARIN HERNANDEZ LUIS MANUEL"
+              },
+              {
+                "id": "ginecologia-2-participante-067",
+                "name": "ESCOBOZA MALDONADO GLADYS IVONNE"
+              },
+              {
+                "id": "ginecologia-2-participante-068",
+                "name": "MEDINA COLMENARES OSCAR DE JESUS"
+              },
+              {
+                "id": "ginecologia-2-participante-069",
+                "name": "JAIME BERNAL EMMA ROSA"
+              },
+              {
+                "id": "ginecologia-2-participante-070",
+                "name": "MEDINA BORREGO MARIA NEFTALY"
+              },
+              {
+                "id": "ginecologia-2-participante-071",
+                "name": "SANCHEZ CHAVEZ BRENDA MAGDALENA"
+              },
+              {
+                "id": "ginecologia-2-participante-072",
+                "name": "HERNANDEZ GUTIERREZ ABRIL DEL ROCIO"
+              },
+              {
+                "id": "ginecologia-2-participante-073",
+                "name": "GUTIERREZ RODRIGUEZ ARACELI"
+              },
+              {
+                "id": "ginecologia-2-participante-074",
+                "name": "MATA VARGAS CARLOS ARTURO"
+              },
+              {
+                "id": "ginecologia-2-participante-075",
+                "name": "SANCHEZ ZARAGOZA SAMANTHA"
+              },
+              {
+                "id": "ginecologia-2-participante-076",
+                "name": "ESPARZA DUQUE MARIA GABRIELA"
+              },
+              {
+                "id": "ginecologia-2-participante-077",
+                "name": "AVALOS CASTILLO RITA MARIELENA"
+              },
+              {
+                "id": "ginecologia-2-participante-078",
+                "name": "RUIZ SANTOYO ALFREDO"
+              },
+              {
+                "id": "ginecologia-2-participante-079",
+                "name": "MEJIA TORRES MARCO FAVIO"
+              },
+              {
+                "id": "ginecologia-2-participante-080",
+                "name": "MACIAS JUAREZ GABRIELA"
+              },
+              {
+                "id": "ginecologia-2-participante-081",
+                "name": "AGUILAR RODRIGUEZ VIOLETA"
+              },
+              {
+                "id": "ginecologia-2-participante-082",
+                "name": "TORRES FAZ GUILLERMO"
+              },
+              {
+                "id": "ginecologia-2-participante-083",
+                "name": "HUERTA CORTES ALEJANDRO"
+              },
+              {
+                "id": "ginecologia-2-participante-084",
+                "name": "CANTU BELTRAN CRISTINA ELIZABETH"
+              },
+              {
+                "id": "ginecologia-2-participante-085",
+                "name": "TORRES GARCIA CESAR ADRIAN"
+              },
+              {
+                "id": "ginecologia-2-participante-086",
+                "name": "OJEDA PEREZ ARTURO"
+              },
+              {
+                "id": "ginecologia-2-participante-087",
+                "name": "OSUNA ROSALES RICARDO ISRAEL"
+              },
+              {
+                "id": "ginecologia-2-participante-088",
+                "name": "LIMONES MUÑOZ SANDRA"
+              },
+              {
+                "id": "ginecologia-2-participante-089",
+                "name": "ALVAREZ MADRIGAL ANA ISABEL"
+              },
+              {
+                "id": "ginecologia-2-participante-090",
+                "name": "GONZALEZ DURAN MARIA DE JESUS"
+              },
+              {
+                "id": "ginecologia-2-participante-091",
+                "name": "AVILA ORTIZ MARIA IRENE"
+              },
+              {
+                "id": "ginecologia-2-participante-092",
+                "name": "MURO MORENO CAROLINA"
+              },
+              {
+                "id": "ginecologia-2-participante-093",
+                "name": "GUERRA CRUZ ROSA ETHEL"
+              },
+              {
+                "id": "ginecologia-2-participante-094",
+                "name": "NIÑO GONZALEZ TOMAS ANTONIO"
+              },
+              {
+                "id": "ginecologia-2-participante-095",
+                "name": "GARCIA ZARATE MARIA ARGELIA"
+              },
+              {
+                "id": "ginecologia-2-participante-096",
+                "name": "GOMEZ PEREZ EDGAR ENRIQUE"
+              },
+              {
+                "id": "ginecologia-2-participante-097",
+                "name": "ESTUPIÑAN MUÑOZ JUAN FERNANDO"
+              },
+              {
+                "id": "ginecologia-2-participante-098",
+                "name": "ZELAYARAN LIZARRAGA CARLOS ALFONSO"
+              },
+              {
+                "id": "ginecologia-2-participante-099",
+                "name": "ORTEGA CAMACHO ITZEL YADIRA"
+              },
+              {
+                "id": "ginecologia-2-participante-100",
+                "name": "OSUNA OLEA NESTOR JOAQUIN"
+              },
+              {
+                "id": "ginecologia-2-participante-101",
+                "name": "MADRIGAL MADRIGAL JONATHAN JAFHID"
+              },
+              {
+                "id": "ginecologia-2-participante-102",
+                "name": "GONZALEZ MEDINA MARIA DE LOURDES"
+              },
+              {
+                "id": "ginecologia-2-participante-103",
+                "name": "GERARDO VALENZUELA IVES JOSHUA EMMANUEL"
+              },
+              {
+                "id": "ginecologia-2-participante-104",
+                "name": "LUGO TORRES IRMA ROXANA"
+              },
+              {
+                "id": "ginecologia-2-participante-105",
+                "name": "FLORES VILLEGAS ISABELLA CAROLINA"
+              },
+              {
+                "id": "ginecologia-2-participante-106",
+                "name": "GUERRERO ESPINOZA CLAUDIA"
+              },
+              {
+                "id": "ginecologia-2-participante-107",
+                "name": "CEJUDO FLORES MICHEL FERNANDO"
+              },
+              {
+                "id": "ginecologia-2-participante-108",
+                "name": "MORENO HERNANDEZ GAMALIEL"
+              },
+              {
+                "id": "ginecologia-2-participante-109",
+                "name": "VILLALOBOS ESPEJO YADIRA"
+              },
+              {
+                "id": "ginecologia-2-participante-110",
+                "name": "VILLAGRAN HERNANDEZ MARTHA ESTELA"
+              },
+              {
+                "id": "ginecologia-2-participante-111",
+                "name": "MADRAZO ZURITA JESUS ALBERTO"
+              },
+              {
+                "id": "ginecologia-2-participante-112",
+                "name": "AGUIRRE LOPEZ CLAUDIA GUADALUPE"
+              },
+              {
+                "id": "ginecologia-2-participante-113",
+                "name": "IBARRA HERRERA JENNIFER KARINA"
+              },
+              {
+                "id": "ginecologia-2-participante-114",
+                "name": "VALTIERRA CISNEROS PABLO GABRIEL"
+              },
+              {
+                "id": "ginecologia-2-participante-115",
+                "name": "CASTILLO TREVIÑO SAUL JOHASIR"
+              },
+              {
+                "id": "ginecologia-2-participante-116",
+                "name": "JIMENEZ ANDRADE ARMANDO"
+              },
+              {
+                "id": "ginecologia-2-participante-117",
+                "name": "SANCHEZ LOPEZ DE NAVA ANA PAULA"
+              },
+              {
+                "id": "ginecologia-2-participante-118",
+                "name": "ARGÜELLES SAINOS ERICK MANUEL"
+              },
+              {
+                "id": "ginecologia-2-participante-119",
+                "name": "RAMIREZ TREJO HUGO ARMANDO"
+              },
+              {
+                "id": "ginecologia-2-participante-120",
+                "name": "SANCHEZ GARCIA IRMA RAQUEL"
+              },
+              {
+                "id": "ginecologia-2-participante-121",
+                "name": "ROBLES FEREGRINO MARIA CECILIA"
+              },
+              {
+                "id": "ginecologia-2-participante-122",
+                "name": "PABLO ALBINO STEPHANIA"
+              },
+              {
+                "id": "ginecologia-2-participante-123",
+                "name": "HERRERA BANTE HEADY"
+              },
+              {
+                "id": "ginecologia-2-participante-124",
+                "name": "LOPEZ ORDAZ ANGELA"
+              },
+              {
+                "id": "ginecologia-2-participante-125",
+                "name": "HERNANDEZ JUAREZ MIGUEL ANGEL"
+              },
+              {
+                "id": "ginecologia-2-participante-126",
+                "name": "ARCINIEGA SIBAJA ISRAEL"
+              },
+              {
+                "id": "ginecologia-2-participante-127",
+                "name": "FLORES SUAZO HUBERTO"
+              },
+              {
+                "id": "ginecologia-2-participante-128",
+                "name": "PEREZ CORNELIO RUBEN"
+              },
+              {
+                "id": "ginecologia-2-participante-129",
+                "name": "PELAYO PARRA ARLETTE"
+              },
+              {
+                "id": "ginecologia-2-participante-130",
+                "name": "ACOSTA VAZQUEZ EDGAR"
+              },
+              {
+                "id": "ginecologia-2-participante-131",
+                "name": "VELAZQUEZ LARA MARCO ANTONIO"
+              },
+              {
+                "id": "ginecologia-2-participante-132",
+                "name": "GONZALEZ SEVILLA VICTOR GUADALUPE"
+              },
+              {
+                "id": "ginecologia-2-participante-133",
+                "name": "GARCIA GIL JOSE RAFAEL"
+              },
+              {
+                "id": "ginecologia-2-participante-134",
+                "name": "CASTRO GALVEZ NORMA CAROLINA"
+              },
+              {
+                "id": "ginecologia-2-participante-135",
+                "name": "GANEM TORRES CARLOS ALBERTO"
+              },
+              {
+                "id": "ginecologia-2-participante-136",
+                "name": "DIAZ ZURITA GUADALUPE"
+              },
+              {
+                "id": "ginecologia-2-participante-137",
+                "name": "CASTELLANOS HERNANDEZ ANGEL OMAR"
+              },
+              {
+                "id": "ginecologia-2-participante-138",
+                "name": "MOLINA CEBALLOS KARLA MARISSA"
+              },
+              {
+                "id": "ginecologia-2-participante-139",
+                "name": "LEON LARA JULIO CESAR"
+              },
+              {
+                "id": "ginecologia-2-participante-140",
+                "name": "SANCHEZ DOMINGUEZ AURELIO"
+              },
+              {
+                "id": "ginecologia-2-participante-141",
+                "name": "RAMIREZ PARDO JOSHUA AARON"
+              },
+              {
+                "id": "ginecologia-2-participante-142",
+                "name": "LAYNEZ OSORIO BRILLANTE RUBI"
+              },
+              {
+                "id": "ginecologia-2-participante-143",
+                "name": "GOMEZ HERNANDEZ ELIZABETH"
+              },
+              {
+                "id": "ginecologia-2-participante-144",
+                "name": "CRUZ PEREZ CARLOS ENRIQUE"
+              },
+              {
+                "id": "ginecologia-2-participante-145",
+                "name": "PINEDA LOPEZ TANIA DEL CARMEN"
+              },
+              {
+                "id": "ginecologia-2-participante-146",
+                "name": "MIRANDA GUZMAN LORENA"
+              },
+              {
+                "id": "ginecologia-2-participante-147",
+                "name": "DE DIOS LOPEZ JESUS MANUEL"
+              },
+              {
+                "id": "ginecologia-2-participante-148",
+                "name": "ARJONA ANDRADE CRISTELLE"
+              }
+            ],
+            "presentations": [
+              {"id":"ginecologia-2-ppi-01","title":"PPI - ACOSTA HURTADO ALEXANDRA","doctor":"Dr.: Acosta Hurtado Alexandra","sede":"Mexicali, Baja California","especialidad":"Ginecología OB","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-01.jpg"},
+              {"id":"ginecologia-2-ppi-02","title":"PPI - FERNANDEZ HUERTA VERONICA","doctor":"Dr.: Fernández Huerta Verónica","sede":"Mexicali, Baja California","especialidad":"Ginecología OB","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-02.jpg"},
+              {"id":"ginecologia-2-ppi-03","title":"PPI - BARKLEY VELASQUEZ VICTOR GUILL","doctor":"Dr.: Barkley Velásquez Víctor Guillermo","sede":"Centro, Tabasco","especialidad":"Cirugía","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-03.jpeg"},
+              {"id":"ginecologia-2-ppi-04","title":"PPI - ZARCO VALDEZ JOSE LUIS","doctor":"Dr.: Zarco Valdez José Luis","sede":"Toluca, Estado de México","especialidad":"Ginecología Obstetricia","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-04.jpeg"},
+              {"id":"ginecologia-2-ppi-05","title":"PPI - ALVARADO CASTRO DAVID OMAR","doctor":"Dr.: Alvarado Castro David Omar","sede":"Xochimilco, Ciudad de México","especialidad":"Medicina General","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-05.jpeg"},
+              {"id":"ginecologia-2-ppi-06","title":"PPI - VEGA CAMPOS ROSA ISELA","doctor":"Dr.: Vega Campos Rosa Isela","sede":"Naucalpan de Juárez, Estado de México","especialidad":"Ginecología Obstetricia","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-06.jpeg"},
+              {"id":"ginecologia-2-ppi-07","title":"PPI - TARAZONA VELUTINI PABLO FELIPE","doctor":"Dr.: Tarazona Velutini Pablo Felipe","sede":"Miguel Hidalgo, Ciudad de México","especialidad":"Traumatología Ortopedia","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-07.jpeg"},
+              {"id":"ginecologia-2-ppi-08","title":"PPI - SILVA SANCHEZ VERONICA","doctor":"Dr.: Silva Sánchez Verónica","sede":"Naucalpan de Juárez, Estado de México","especialidad":"Medicina General","categoria":"AA","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-08.jpeg"},
+              {"id":"ginecologia-2-ppi-09","title":"PPI - ORTIZ RUEDA ERICKA ROSA","doctor":"Dr.: Ortiz Rueda Ericka Rosa","sede":"Gustavo A. Madero, Ciudad de México","especialidad":"Medicina General","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-09.jpeg"},
+              {"id":"ginecologia-2-ppi-10","title":"PPI - UICAB GONZALEZ FRANCISCO MANUEL","doctor":"Dr.: Uicab González Francisco Manuel","sede":"Cuauhtémoc, Ciudad de México","especialidad":"Urología","categoria":"AA","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-10.jpeg"},
+              {"id":"ginecologia-2-ppi-11","title":"PPI - ALVAREZ CEDEÑO MONICA","doctor":"Dr.: Álvarez Cedeño Mónica","sede":"Cuauhtémoc, Ciudad de México","especialidad":"Traumatología Ortopedia","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-11.jpeg"},
+              {"id":"ginecologia-2-ppi-12","title":"PPI - CARREON BONILLA RAUL","doctor":"Dr.: Carreón Bonilla Raúl","sede":"León, Guanajuato","especialidad":"Ginecología Obstetricia","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-12.jpeg"},
+              {"id":"ginecologia-2-ppi-13","title":"PPI - ACOSTA VEGA DIONISIO","doctor":"Dr.: Acosta Vega Dionisio","sede":"Cuauhtémoc, Ciudad de México","especialidad":"Ginecología Obstetricia","categoria":"AA","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-13.jpeg"},
+              {"id":"ginecologia-2-ppi-14","title":"PPI - TEJEDA SANCHEZ JAVIER","doctor":"Dr.: Tejeda Sánchez Javier","sede":"Centro, Tabasco","especialidad":"Medicina General","categoria":"AA","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-14.jpeg"},
+              {"id":"ginecologia-2-ppi-15","title":"PPI - CHAPA SANCHEZ CESAR","doctor":"Dr.: Chapa Sánchez César","sede":"Monterrey, Nuevo León","especialidad":"Medicina General","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-15.jpeg"},
+              {"id":"ginecologia-2-ppi-16","title":"PPI - ORDORICA CERVANTES CARLOS","doctor":"Dr.: Ordorica Cervantes Carlos","sede":"Macuspana, Tabasco","especialidad":"Ginecología OB","categoria":"AA","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-16.jpeg"},
+              {"id":"ginecologia-2-ppi-17","title":"PPI - LOPEZ ACEVEDO JUAN CARLOS","doctor":"Dr.: López Acevedo Juan Carlos","sede":"Monterrey, Nuevo León","especialidad":"Medicina General","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-17.jpeg"},
+              {"id":"ginecologia-2-ppi-18","title":"PPI - TORRES SAUNDERS CARLOS","doctor":"Dr.: Torres Saunders Carlos","sede":"Miguel Hidalgo, Ciudad de México","especialidad":"Urología","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-18.jpeg"},
+              {"id":"ginecologia-2-ppi-19","title":"PPI - ESPINOSA BERRONES AMPARO ESMANYUL","doctor":"Dr.: Espinosa Berrones Amparo Esmanyul","sede":"Benito Juárez, Ciudad de México","especialidad":"Endocrinología","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-19.jpeg"},
+              {"id":"ginecologia-2-ppi-20","title":"PPI - GUTIERREZ CONSTANTE SARA","doctor":"Dr.: Gutiérrez Constante Sara","sede":"León, Guanajuato","especialidad":"Ginecología OB","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-20.jpeg"},
+              {"id":"ginecologia-2-ppi-21","title":"PPI - LARA QUIROZ GUSTAVO","doctor":"Dr.: Lara Quiroz Gustavo","sede":"León, Guanajuato","especialidad":"Medicina General","categoria":"VIP","topics":[],"image":"","imagePath":"assets/images/ginecologia-2/ppi-21.jpeg"}
+            ],
+            "history": []
+          },
+          {
+            "id": "modulo-2",
+            "name": "Módulo 2",
+            "participants": [],
+            "presentations": [],
+            "history": []
+          },
+          {
+            "id": "modulo-3",
+            "name": "Módulo 3",
+            "participants": [],
+            "presentations": [],
+            "history": []
+          }
+        ]
+      }
+    
+    
+    </script>
+    <script src="app.js?v=20260605af"></script>
+    <script src="show.js?v=20260616a"></script>
+  </body>
+</html>
