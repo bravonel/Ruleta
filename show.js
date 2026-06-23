@@ -110,6 +110,12 @@ function sxInit() {
   sxEls.audioBtn.addEventListener("click", () => {
     state.audioEnabled = !state.audioEnabled;
     localStorage.setItem("ruleta-show-audio-v1", state.audioEnabled ? "on" : "off");
+    if (state.audioEnabled && sx.active) {
+      startBgMusic();
+    } else {
+      stopAllIncidentals();
+      stopBgMusic();
+    }
     syncAudioBtn();
     if (typeof render === "function") {
       render();
@@ -134,10 +140,13 @@ function syncShow() {
 
   if (on && !sx.active) {
     sx.active = true;
+    if (state.audioEnabled) startBgMusic();
     resetToSplash();
   } else if (!on && sx.active) {
     sx.active = false;
     stopTimers();
+    stopAllIncidentals();
+    stopBgMusic();
   }
 
   if (on) {
@@ -193,6 +202,7 @@ function resetToSplash() {
 }
 
 async function curtainSwitch(midFn) {
+  playSound("transition");
   const curtain = sxEls.curtain;
   curtain.style.transition = "transform .42s cubic-bezier(.7,0,.3,1)";
   curtain.style.transform = "translateX(0) skewX(-8deg)";
@@ -883,6 +893,7 @@ async function goToResult() {
   sx.busy = false;
   refreshChrome();
   sxConfettiBurst();
+  playSound("victory");
 }
 
 function renderResult() {
@@ -918,7 +929,7 @@ function buildWheel() {
   const CX = 380;
   const CY = 380;
   const R_RIM_OUT = 358;
-  const R_RIM_IN = 318;
+  const R_RIM_IN = 324;
   const R_BULB = 338;
   const STEP = 360 / count;
 
@@ -1117,6 +1128,7 @@ function stopTimers() {
   });
   stopBulbAnimation();
   clearPhysicsTimers();
+  stopAllIncidentals();
 }
 
 /* ---------- Previsualización para QA / demo ---------- */

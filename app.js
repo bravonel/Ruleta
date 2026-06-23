@@ -6,7 +6,7 @@ const colors = ["#24a8df", "#f5a33a", "#e7603d", "#b72f91", "#51499a", "#18a4c8"
 const suspenseLabels = ["???", "¿Quién será?", "En juego", "Preparados", "Siguiente"];
 
 const state = {
-  data: loadData(),
+  data: null,
   view: "event",
   rollingParticipant: false,
   rollingWheel: false,
@@ -120,16 +120,20 @@ const els = {
   exportDataBtn: document.getElementById("exportDataBtn"),
   importDataInput: document.getElementById("importDataInput"),
   clearLocalDataBtn: document.getElementById("clearLocalDataBtn"),
+  resetAllDataBtn: document.getElementById("resetAllDataBtn"),
   clearHistoryBtn: document.getElementById("clearHistoryBtn"),
   historyTableBody: document.getElementById("historyTableBody"),
   toast: document.getElementById("toast"),
   confetti: document.getElementById("confetti")
 };
 
-bindEvents();
-render();
+(async function init() {
+  state.data = await loadData();
+  bindEvents();
+  render();
+})();
 
-function loadData() {
+async function loadData() {
   const saved = localStorage.getItem(STORAGE_KEY);
   if (saved) {
     try {
@@ -138,9 +142,13 @@ function loadData() {
       localStorage.removeItem(STORAGE_KEY);
     }
   }
-
-  const seed = document.getElementById("seed-data");
-  return normalizeData(JSON.parse(seed.textContent));
+  try {
+    const res = await fetch("assets/data/modules.json");
+    const json = await res.json();
+    return normalizeData(json);
+  } catch {
+    return normalizeData(null);
+  }
 }
 
 function loadEventMode() {
@@ -331,6 +339,7 @@ function bindEvents() {
   els.exportDataBtn.addEventListener("click", exportData);
   els.importDataInput.addEventListener("change", importData);
   els.clearLocalDataBtn.addEventListener("click", clearLocalData);
+  els.resetAllDataBtn.addEventListener("click", resetAllData);
   els.clearHistoryBtn.addEventListener("click", clearHistory);
 
   document.getElementById("imgLightboxClose").addEventListener("click", closeImageLightbox);
@@ -1255,16 +1264,24 @@ function importData(event) {
   reader.readAsText(file);
 }
 
-function clearLocalData() {
+async function clearLocalData() {
   if (!window.confirm("¿Borrar cambios locales y volver a la base inicial?")) {
     return;
   }
   localStorage.removeItem(STORAGE_KEY);
-  state.data = loadData();
+  state.data = await loadData();
   resetDrawBags();
   clearRound();
   toast("Cambios locales borrados");
   render();
+}
+
+function resetAllData() {
+  if (!window.confirm("⚠️ ¿Estás seguro?\n\nEsto borrará TODOS los datos guardados (módulos, participantes, historial) y recargará la página desde cero.\n\nEsta acción no se puede deshacer.")) {
+    return;
+  }
+  localStorage.removeItem(STORAGE_KEY);
+  location.reload();
 }
 
 function clearHistory() {
@@ -1369,31 +1386,208 @@ function normalizeDegrees(degrees) {
   return ((degrees % 360) + 360) % 360;
 }
 
-function playSound(name) {
-  if (!state.audioEnabled) {
+/* ===== SISTEMA DE AUDIO POR CAPAS =====
+   Capa 1 – Background (loop): Everlasting Style, vol bajo, siempre en show mode
+   Capa 2 – Incidentales: sonidos de escena (esferas, ruleta, transiciones)
+   Capa 3 – SFX: efectos puntuales (win, tick)
+*/
+
+const audioLayers = {
+  bg: null,        // background loop
+  sphereMusic: null, // Inspiring Success (esferas)
+  sphereTimer: null, // Game Timer loop (esferas)
+  wheelSpin: null,   // Electronic Wheel Spin
+  transition: null,  // GameRewardTransition
+  victory: null      // Inspiring Victory (resultado)
+};
+
+const VOL = {
+  bg: 0.25,
+  sphereMusic: 0.45,
+  sphereTimer: 0.30,
+  wheelSpin: 0.50,
+  transition: 0.40,
+  win: 0.55,
+  victory: 0.65,
+  tick: 0.10
+};
+
+function startBgMusic() {
+  if (audioLayers.bg) return;
+  const audio = new Audio("assets/audio/MA_Sound_Gallery_The Everlasting Style_0-33_01.mp3");
+  audio.loop = true;
+  audio.volume = VOL.bg;
+  audio.play().catch(() => {});
+  audioLayers.bg = audio;
+}
+
+function stopBgMusic() {
+  if (audioLayers.bg) {
+    audioLayers.bg.pause();
+    audioLayers.bg.currentTime = 0;
+    audioLayers.bg = null;
+  }
+}
+
+function fadeOutAudio(audio, duration) {
+  if (!audio) return;
+  // Limpiar fade previo si existe
+  if (audio._fadeInterval) {
+    clearInterval(audio._fadeInterval);
+    audio._fadeInterval = null;
+  }
+  if (audio.paused || audio.volume <= 0.01) {
+    try { audio.pause(); } catch (_) {}
     return;
   }
+  const step = 0.02;
+  const steps = Math.max(1, audio.volume / step);
+  const interval = Math.max(10, duration / steps);
+  audio._fadeInterval = setInterval(() => {
+    if (audio.volume > step) {
+      audio.volume = Math.max(0, audio.volume - step);
+    } else {
+      audio.volume = 0;
+      audio.pause();
+      audio.currentTime = 0;
+      clearInterval(audio._fadeInterval);
+      audio._fadeInterval = null;
+    }
+  }, interval);
+}
 
-  const src = {
-    suspense: "assets/audio/suspense.wav",
-    spin: "assets/audio/spin.wav",
-    win: "assets/audio/win.wav"
-  }[name];
+function startSphereAudio() {
+  if (!state.audioEnabled) return;
+  // Detener previos si existen (retry) — corte inmediato
+  stopSphereAudio(true);
+  // Capa: Inspiring Success
+  const music = new Audio("assets/audio/Inspiring Success.wav");
+  music.volume = VOL.sphereMusic;
+  music.play().catch(() => {});
+  audioLayers.sphereMusic = music;
+  // Capa: Game Timer loop
+  const timer = new Audio("assets/audio/MA_Tuttkile_GameTimer_5_Loop.wav");
+  timer.loop = true;
+  timer.volume = VOL.sphereTimer;
+  timer.play().catch(() => {});
+  audioLayers.sphereTimer = timer;
+}
 
-  if (src) {
-    const audio = new Audio(src);
-    audio.volume = name === "win" ? 0.72 : 0.42;
+function stopSphereAudio(immediate) {
+  if (audioLayers.sphereMusic) {
+    if (immediate) {
+      audioLayers.sphereMusic.pause();
+      audioLayers.sphereMusic.currentTime = 0;
+    } else {
+      fadeOutAudio(audioLayers.sphereMusic, 400);
+    }
+    audioLayers.sphereMusic = null;
+  }
+  if (audioLayers.sphereTimer) {
+    if (immediate) {
+      audioLayers.sphereTimer.pause();
+      audioLayers.sphereTimer.currentTime = 0;
+    } else {
+      fadeOutAudio(audioLayers.sphereTimer, 400);
+    }
+    audioLayers.sphereTimer = null;
+  }
+}
+
+function startWheelAudio() {
+  if (!state.audioEnabled) return;
+  // Detener previo si existe (retry)
+  stopWheelAudio();
+  const spin = new Audio("assets/audio/Electronic Wheel Spin 5 sec.wav");
+  spin.volume = VOL.wheelSpin;
+  spin.play().catch(() => {});
+  audioLayers.wheelSpin = spin;
+}
+
+function stopWheelAudio() {
+  if (audioLayers.wheelSpin) {
+    audioLayers.wheelSpin.pause();
+    audioLayers.wheelSpin.currentTime = 0;
+    audioLayers.wheelSpin = null;
+  }
+}
+
+function playTransitionSound() {
+  if (!state.audioEnabled) return;
+  // Detener transición previa si aún suena
+  if (audioLayers.transition) {
+    audioLayers.transition.pause();
+    audioLayers.transition.currentTime = 0;
+  }
+  const t = new Audio("assets/audio/MA_Tuttkile_GameRewardTransition_1.wav");
+  t.volume = VOL.transition;
+  t.play().catch(() => {});
+  audioLayers.transition = t;
+}
+
+function startVictoryAudio() {
+  if (!state.audioEnabled) return;
+  stopVictoryAudio();
+  const v = new Audio("assets/audio/Inspiring Victory.wav");
+  v.loop = false;
+  v.volume = VOL.victory;
+  v.play().catch(() => {});
+  audioLayers.victory = v;
+}
+
+function stopVictoryAudio() {
+  if (audioLayers.victory) {
+    audioLayers.victory.pause();
+    audioLayers.victory.currentTime = 0;
+    audioLayers.victory = null;
+  }
+}
+
+function playSound(name) {
+  if (!state.audioEnabled) return;
+
+  if (name === "suspense") {
+    startSphereAudio();
+    return;
+  }
+  if (name === "spin") {
+    startWheelAudio();
+    return;
+  }
+  if (name === "win") {
+    stopSphereAudio();
+    stopWheelAudio();
+    const audio = new Audio("assets/audio/Inspiring Complete.wav");
+    audio.volume = VOL.win;
     audio.play().catch(() => synthSound(name));
-  } else {
-    synthSound(name);
+    return;
+  }
+  if (name === "victory") {
+    startVictoryAudio();
+    return;
+  }
+  if (name === "transition") {
+    playTransitionSound();
+    return;
+  }
+  // tick - sintetizado
+  synthSound(name);
+}
+
+function stopAllIncidentals() {
+  stopSphereAudio(true);
+  stopWheelAudio();
+  stopVictoryAudio();
+  if (audioLayers.transition) {
+    audioLayers.transition.pause();
+    audioLayers.transition.currentTime = 0;
+    audioLayers.transition = null;
   }
 }
 
 function synthSound(name) {
   const AudioContext = window.AudioContext || window.webkitAudioContext;
-  if (!AudioContext) {
-    return;
-  }
+  if (!AudioContext) return;
   const ctx = new AudioContext();
   const osc = ctx.createOscillator();
   const gain = ctx.createGain();
@@ -1405,7 +1599,7 @@ function synthSound(name) {
     osc.frequency.setValueAtTime(740, now);
     osc.frequency.exponentialRampToValueAtTime(980, now + 0.045);
     gain.gain.setValueAtTime(0.0001, now);
-    gain.gain.exponentialRampToValueAtTime(0.07, now + 0.01);
+    gain.gain.exponentialRampToValueAtTime(VOL.tick, now + 0.01);
     gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.09);
     osc.start(now);
     osc.stop(now + 0.1);

@@ -1,5 +1,5 @@
 {
-  "activeModuleId": "modulo-1",
+  "activeModuleId": "modulo-3",
   "modules": [
     {
       "id": "modulo-1",
@@ -7,11 +7,11 @@
       "participants": [
         {
           "id": "ginecologia-2-participante-001",
-          "name": "SANCHEZ HURTADO MOISES"
+          "name": "SÁNCHEZ HURTADO MOISÉS"
         },
         {
           "id": "ginecologia-2-participante-002",
-          "name": "OLVERA MORALES MARIA EUGENIA"
+          "name": "OLVERA MORALES MARÍA EUGENIA"
         },
         {
           "id": "ginecologia-2-participante-003",
@@ -19,27 +19,27 @@
         },
         {
           "id": "ginecologia-2-participante-004",
-          "name": "RANGEL LOPEZ MARIA FERNANDA"
+          "name": "RANGEL LÓPEZ MARÍA FERNANDA"
         },
         {
           "id": "ginecologia-2-participante-005",
-          "name": "APARICIO CANO JOSE MIGUEL"
+          "name": "APARICIO CANO JOSÉ MIGUEL"
         },
         {
           "id": "ginecologia-2-participante-006",
-          "name": "VELAZQUEZ MARQUEZ MARIA FERNANDA"
+          "name": "VELÁZQUEZ MÁRQUEZ MARÍA FERNANDA"
         },
         {
           "id": "ginecologia-2-participante-007",
-          "name": "ALCANTARA SALAZAR SARA AHYDEE"
+          "name": "ALCÁNTARA SALAZAR SARA AHYDEE"
         },
         {
           "id": "ginecologia-2-participante-008",
-          "name": "GONZALEZ MARTINEZ BELEN"
+          "name": "GONZÁLEZ MARTÍNEZ BELÉN"
         },
         {
           "id": "ginecologia-2-participante-009",
-          "name": "LUNA MARTINEZ ALBERTO FABIAN"
+          "name": "LUNA MARTÍNEZ ALBERTO FABIÁN"
         },
         {
           "id": "ginecologia-2-participante-010",
@@ -47,7 +47,7 @@
         },
         {
           "id": "ginecologia-2-participante-011",
-          "name": "HERNANDEZ LOPEZ FRANCISCO JAVIER"
+          "name": "HERNÁNDEZ LÓPEZ FRANCISCO JAVIER"
         },
         {
           "id": "ginecologia-2-participante-012",
@@ -55,23 +55,23 @@
         },
         {
           "id": "ginecologia-2-participante-013",
-          "name": "ARREDONDO GOMEZ MARIBEL IVON"
+          "name": "ARREDONDO GÓMEZ MARIBEL IVON"
         },
         {
           "id": "ginecologia-2-participante-014",
-          "name": "SEGOVIANO FALCON VIRGINIA"
+          "name": "SEGOVIANO FALCÓN VIRGINIA"
         },
         {
           "id": "ginecologia-2-participante-015",
-          "name": "BATHA MARTINEZ DANIEL"
+          "name": "BATHA MARTÍNEZ DANIEL"
         },
         {
           "id": "ginecologia-2-participante-016",
-          "name": "BALAN GONZALEZ LAURA ARMENIA"
+          "name": "BALÁN GONZÁLEZ LAURA ARMENIA"
         },
         {
           "id": "ginecologia-2-participante-017",
-          "name": "HERNANDEZ BENITEZ MARIA ISABEL"
+          "name": "HERNÁNDEZ BENÍTEZ MARÍA ISABEL"
         },
         {
           "id": "ginecologia-2-participante-018",
@@ -83,15 +83,15 @@
         },
         {
           "id": "ginecologia-2-participante-020",
-          "name": "RAMIREZ HERRERA MITZY FICEL"
+          "name": "RAMÍREZ HERRERA MITZY FICEL"
         },
         {
           "id": "ginecologia-2-participante-021",
-          "name": "LOPEZ SALGADO LORENA"
+          "name": "LÓPEZ SALGADO LORENA"
         },
         {
           "id": "ginecologia-2-participante-022",
-          "name": "GARCIA SOLIS ABRAHAM TEMISTOCLES"
+          "name": "GARCÍA SOLÍS ABRAHAM TEMISTOCLES"
         },
         {
           "id": "ginecologia-2-participante-023",
@@ -99,23 +99,23 @@
         },
         {
           "id": "ginecologia-2-participante-024",
-          "name": "CARLON VEGA ALEJANDRA MARGARITA"
+          "name": "CARLÓN VEGA ALEJANDRA MARGARITA"
         },
         {
           "id": "ginecologia-2-participante-025",
-          "name": "VIGIL ALVAREZ ILIANA RAQUEL"
+          "name": "VIGIL ÁLVAREZ ILIANA RAQUEL"
         },
         {
           "id": "ginecologia-2-participante-026",
-          "name": "ALVARADO MOLINA MARIA GABRIELA"
+          "name": "ALVARADO MOLINA MARÍA GABRIELA"
         },
         {
           "id": "ginecologia-2-participante-027",
-          "name": "GOMEZ PEREA KARIM YAREH"
+          "name": "GÓMEZ PEREA KARIM YAREH"
         },
         {
           "id": "ginecologia-2-participante-028",
-          "name": "SANCHEZ GUEVARA HUMBERTO JESUS"
+          "name": "SÁNCHEZ GUEVARA HUMBERTO JESÚS"
         },
         {
           "id": "ginecologia-2-participante-029",
@@ -123,23 +123,23 @@
         },
         {
           "id": "ginecologia-2-participante-030",
-          "name": "HERNANDEZ SALAZAR ANA ZULEM"
+          "name": "HERNÁNDEZ SALAZAR ANA ZULEM"
         },
         {
           "id": "ginecologia-2-participante-031",
-          "name": "PEREZ HERNANDEZ ANABELL"
+          "name": "PÉREZ HERNÁNDEZ ANABELL"
         },
         {
           "id": "ginecologia-2-participante-032",
-          "name": "DAVILA MARTINEZ MONICA"
+          "name": "DÁVILA MARTÍNEZ MÓNICA"
         },
         {
           "id": "ginecologia-2-participante-033",
-          "name": "VALDES PACHECO MARIBEL"
+          "name": "VALDÉS PACHECO MARIBEL"
         },
         {
           "id": "ginecologia-2-participante-034",
-          "name": "IZASMENDI ROBLES MARIA EUGENIA"
+          "name": "IZASMENDI ROBLES MARÍA EUGENIA"
         },
         {
           "id": "ginecologia-2-participante-035",
@@ -147,23 +147,23 @@
         },
         {
           "id": "ginecologia-2-participante-036",
-          "name": "ANGELES DIAZ JULIO CESAR"
+          "name": "ANGELES DÍAZ JULIO CÉSAR"
         },
         {
           "id": "ginecologia-2-participante-037",
-          "name": "MAGAÑA MERCADO MARIA DE LA LUZ"
+          "name": "MAGAÑA MERCADO MARÍA DE LA LUZ"
         },
         {
           "id": "ginecologia-2-participante-038",
-          "name": "NAVA MORENO OSCAR ISRAEL"
+          "name": "NAVA MORENO ÓSCAR ISRAEL"
         },
         {
           "id": "ginecologia-2-participante-039",
-          "name": "SANCHEZ VARGAS CESAR AGUSTIN"
+          "name": "SÁNCHEZ VARGAS CÉSAR AGUSTÍN"
         },
         {
           "id": "ginecologia-2-participante-040",
-          "name": "BRITO GUZMAN MARIA DE LOURDES"
+          "name": "BRITO GUZMÁN MARÍA DE LOURDES"
         },
         {
           "id": "ginecologia-2-participante-041",
@@ -171,15 +171,15 @@
         },
         {
           "id": "ginecologia-2-participante-042",
-          "name": "MARTINEZ HERNANDEZ ALBERTO DAMIAN"
+          "name": "MARTÍNEZ HERNÁNDEZ ALBERTO DAMIÁN"
         },
         {
           "id": "ginecologia-2-participante-043",
-          "name": "CRISTO GONZALEZ DE LA LUZ ALEXIS"
+          "name": "CRISTO GONZÁLEZ DE LA LUZ ALEXIS"
         },
         {
           "id": "ginecologia-2-participante-044",
-          "name": "AGUIRRE LEON DANIEL"
+          "name": "AGUIRRE LEÓN DANIEL"
         },
         {
           "id": "ginecologia-2-participante-045",
@@ -187,47 +187,47 @@
         },
         {
           "id": "ginecologia-2-participante-046",
-          "name": "DIAZ GONZALEZ JUAN"
+          "name": "DÍAZ GONZÁLEZ JUAN"
         },
         {
           "id": "ginecologia-2-participante-047",
-          "name": "ROMERO HERNANDEZ KAREN"
+          "name": "ROMERO HERNÁNDEZ KAREN"
         },
         {
           "id": "ginecologia-2-participante-048",
-          "name": "LOPEZ SALAZAR MYRIAM ROCIO"
+          "name": "LÓPEZ SALAZAR MYRIAM ROCÍO"
         },
         {
           "id": "ginecologia-2-participante-049",
-          "name": "RAMOS VELAZQUEZ ERIKA MARLENE"
+          "name": "RAMOS VELÁZQUEZ ERIKA MARLENE"
         },
         {
           "id": "ginecologia-2-participante-050",
-          "name": "BENAVIDES TIENDA RAMON"
+          "name": "BENAVIDES TIENDA RAMÓN"
         },
         {
           "id": "ginecologia-2-participante-051",
-          "name": "ARMENTA RESENDIZ JACQUELINE"
+          "name": "ARMENTA RESÉNDIZ JACQUELINE"
         },
         {
           "id": "ginecologia-2-participante-052",
-          "name": "BARAJAS VARGAS NOE ALEJANDRO"
+          "name": "BARAJAS VARGAS NOÉ ALEJANDRO"
         },
         {
           "id": "ginecologia-2-participante-053",
-          "name": "GUTIERREZ NOVIA ESTEFANIA"
+          "name": "GUTIÉRREZ NOVIA ESTEFANIA"
         },
         {
           "id": "ginecologia-2-participante-054",
-          "name": "CASTRO JIMENEZ ALEJANDRO"
+          "name": "CASTRO JIMÉNEZ ALEJANDRO"
         },
         {
           "id": "ginecologia-2-participante-055",
-          "name": "BECERRA FERNANDEZ ALFONSO"
+          "name": "BECERRA FERNÁNDEZ ALFONSO"
         },
         {
           "id": "ginecologia-2-participante-056",
-          "name": "MORENO RIOS LAURA ELENA"
+          "name": "MORENO RÍOS LAURA ELENA"
         },
         {
           "id": "ginecologia-2-participante-057",
@@ -235,19 +235,19 @@
         },
         {
           "id": "ginecologia-2-participante-058",
-          "name": "MADRIGAL GONZALEZ JULIA EDITH"
+          "name": "MADRIGAL GONZÁLEZ JULIA EDITH"
         },
         {
           "id": "ginecologia-2-participante-059",
-          "name": "QUEZADA RUEDA JOSE CRUZ"
+          "name": "QUEZADA RUEDA JOSÉ CRUZ"
         },
         {
           "id": "ginecologia-2-participante-060",
-          "name": "LOPEZ DAVALOS MONICA RAQUEL"
+          "name": "LÓPEZ DÁVALOS MÓNICA RAQUEL"
         },
         {
           "id": "ginecologia-2-participante-061",
-          "name": "GONZALEZ GODOY ELIZABETH"
+          "name": "GONZÁLEZ GODOY ELIZABETH"
         },
         {
           "id": "ginecologia-2-participante-062",
@@ -255,7 +255,7 @@
         },
         {
           "id": "ginecologia-2-participante-063",
-          "name": "JARAMILLO SANTILLAN KARLA GABRIELA"
+          "name": "JARAMILLO SANTILLÁN KARLA GABRIELA"
         },
         {
           "id": "ginecologia-2-participante-064",
@@ -267,7 +267,7 @@
         },
         {
           "id": "ginecologia-2-participante-066",
-          "name": "TARIN HERNANDEZ LUIS MANUEL"
+          "name": "TARÍN HERNÁNDEZ LUIS MANUEL"
         },
         {
           "id": "ginecologia-2-participante-067",
@@ -275,7 +275,7 @@
         },
         {
           "id": "ginecologia-2-participante-068",
-          "name": "MEDINA COLMENARES OSCAR DE JESUS"
+          "name": "MEDINA COLMENARES ÓSCAR DE JESÚS"
         },
         {
           "id": "ginecologia-2-participante-069",
@@ -283,19 +283,19 @@
         },
         {
           "id": "ginecologia-2-participante-070",
-          "name": "MEDINA BORREGO MARIA NEFTALY"
+          "name": "MEDINA BORREGO MARÍA NEFTALY"
         },
         {
           "id": "ginecologia-2-participante-071",
-          "name": "SANCHEZ CHAVEZ BRENDA MAGDALENA"
+          "name": "SÁNCHEZ CHÁVEZ BRENDA MAGDALENA"
         },
         {
           "id": "ginecologia-2-participante-072",
-          "name": "HERNANDEZ GUTIERREZ ABRIL DEL ROCIO"
+          "name": "HERNÁNDEZ GUTIÉRREZ ABRIL DEL ROCÍO"
         },
         {
           "id": "ginecologia-2-participante-073",
-          "name": "GUTIERREZ RODRIGUEZ ARACELI"
+          "name": "GUTIÉRREZ RODRÍGUEZ ARACELI"
         },
         {
           "id": "ginecologia-2-participante-074",
@@ -303,15 +303,15 @@
         },
         {
           "id": "ginecologia-2-participante-075",
-          "name": "SANCHEZ ZARAGOZA SAMANTHA"
+          "name": "SÁNCHEZ ZARAGOZA SAMANTHA"
         },
         {
           "id": "ginecologia-2-participante-076",
-          "name": "ESPARZA DUQUE MARIA GABRIELA"
+          "name": "ESPARZA DUQUE MARÍA GABRIELA"
         },
         {
           "id": "ginecologia-2-participante-077",
-          "name": "AVALOS CASTILLO RITA MARIELENA"
+          "name": "ÁVALOS CASTILLO RITA MARIELENA"
         },
         {
           "id": "ginecologia-2-participante-078",
@@ -319,15 +319,15 @@
         },
         {
           "id": "ginecologia-2-participante-079",
-          "name": "MEJIA TORRES MARCO FAVIO"
+          "name": "MEJÍA TORRES MARCO FAVIO"
         },
         {
           "id": "ginecologia-2-participante-080",
-          "name": "MACIAS JUAREZ GABRIELA"
+          "name": "MACÍAS JUÁREZ GABRIELA"
         },
         {
           "id": "ginecologia-2-participante-081",
-          "name": "AGUILAR RODRIGUEZ VIOLETA"
+          "name": "AGUILAR RODRÍGUEZ VIOLETA"
         },
         {
           "id": "ginecologia-2-participante-082",
@@ -335,19 +335,19 @@
         },
         {
           "id": "ginecologia-2-participante-083",
-          "name": "HUERTA CORTES ALEJANDRO"
+          "name": "HUERTA CORTÉS ALEJANDRO"
         },
         {
           "id": "ginecologia-2-participante-084",
-          "name": "CANTU BELTRAN CRISTINA ELIZABETH"
+          "name": "CANTÚ BELTRÁN CRISTINA ELIZABETH"
         },
         {
           "id": "ginecologia-2-participante-085",
-          "name": "TORRES GARCIA CESAR ADRIAN"
+          "name": "TORRES GARCÍA CÉSAR ADRIÁN"
         },
         {
           "id": "ginecologia-2-participante-086",
-          "name": "OJEDA PEREZ ARTURO"
+          "name": "OJEDA PÉREZ ARTURO"
         },
         {
           "id": "ginecologia-2-participante-087",
@@ -359,15 +359,15 @@
         },
         {
           "id": "ginecologia-2-participante-089",
-          "name": "ALVAREZ MADRIGAL ANA ISABEL"
+          "name": "ÁLVAREZ MADRIGAL ANA ISABEL"
         },
         {
           "id": "ginecologia-2-participante-090",
-          "name": "GONZALEZ DURAN MARIA DE JESUS"
+          "name": "GONZÁLEZ DURÁN MARÍA DE JESÚS"
         },
         {
           "id": "ginecologia-2-participante-091",
-          "name": "AVILA ORTIZ MARIA IRENE"
+          "name": "ÁVILA ORTIZ MARÍA IRENE"
         },
         {
           "id": "ginecologia-2-participante-092",
@@ -379,23 +379,23 @@
         },
         {
           "id": "ginecologia-2-participante-094",
-          "name": "NIÑO GONZALEZ TOMAS ANTONIO"
+          "name": "NIÑO GONZÁLEZ TOMÁS ANTONIO"
         },
         {
           "id": "ginecologia-2-participante-095",
-          "name": "GARCIA ZARATE MARIA ARGELIA"
+          "name": "GARCÍA ZÁRATE MARÍA ARGELIA"
         },
         {
           "id": "ginecologia-2-participante-096",
-          "name": "GOMEZ PEREZ EDGAR ENRIQUE"
+          "name": "GÓMEZ PÉREZ EDGAR ENRIQUE"
         },
         {
           "id": "ginecologia-2-participante-097",
-          "name": "ESTUPIÑAN MUÑOZ JUAN FERNANDO"
+          "name": "ESTUPIÑÁN MUÑOZ JUAN FERNANDO"
         },
         {
           "id": "ginecologia-2-participante-098",
-          "name": "ZELAYARAN LIZARRAGA CARLOS ALFONSO"
+          "name": "ZELAYARÁN LIZARRAGA CARLOS ALFONSO"
         },
         {
           "id": "ginecologia-2-participante-099",
@@ -403,7 +403,7 @@
         },
         {
           "id": "ginecologia-2-participante-100",
-          "name": "OSUNA OLEA NESTOR JOAQUIN"
+          "name": "OSUNA OLEA NÉSTOR JOAQUÍN"
         },
         {
           "id": "ginecologia-2-participante-101",
@@ -411,7 +411,7 @@
         },
         {
           "id": "ginecologia-2-participante-102",
-          "name": "GONZALEZ MEDINA MARIA DE LOURDES"
+          "name": "GONZÁLEZ MEDINA MARÍA DE LOURDES"
         },
         {
           "id": "ginecologia-2-participante-103",
@@ -435,7 +435,7 @@
         },
         {
           "id": "ginecologia-2-participante-108",
-          "name": "MORENO HERNANDEZ GAMALIEL"
+          "name": "MORENO HERNÁNDEZ GAMALIEL"
         },
         {
           "id": "ginecologia-2-participante-109",
@@ -443,15 +443,15 @@
         },
         {
           "id": "ginecologia-2-participante-110",
-          "name": "VILLAGRAN HERNANDEZ MARTHA ESTELA"
+          "name": "VILLAGRÁN HERNÁNDEZ MARTHA ESTELA"
         },
         {
           "id": "ginecologia-2-participante-111",
-          "name": "MADRAZO ZURITA JESUS ALBERTO"
+          "name": "MADRAZO ZURITA JESÚS ALBERTO"
         },
         {
           "id": "ginecologia-2-participante-112",
-          "name": "AGUIRRE LOPEZ CLAUDIA GUADALUPE"
+          "name": "AGUIRRE LÓPEZ CLAUDIA GUADALUPE"
         },
         {
           "id": "ginecologia-2-participante-113",
@@ -463,15 +463,15 @@
         },
         {
           "id": "ginecologia-2-participante-115",
-          "name": "CASTILLO TREVIÑO SAUL JOHASIR"
+          "name": "CASTILLO TREVIÑO SAÚL JOHASIR"
         },
         {
           "id": "ginecologia-2-participante-116",
-          "name": "JIMENEZ ANDRADE ARMANDO"
+          "name": "JIMÉNEZ ANDRADE ARMANDO"
         },
         {
           "id": "ginecologia-2-participante-117",
-          "name": "SANCHEZ LOPEZ DE NAVA ANA PAULA"
+          "name": "SÁNCHEZ LÓPEZ DE NAVA ANA PAULA"
         },
         {
           "id": "ginecologia-2-participante-118",
@@ -479,15 +479,15 @@
         },
         {
           "id": "ginecologia-2-participante-119",
-          "name": "RAMIREZ TREJO HUGO ARMANDO"
+          "name": "RAMÍREZ TREJO HUGO ARMANDO"
         },
         {
           "id": "ginecologia-2-participante-120",
-          "name": "SANCHEZ GARCIA IRMA RAQUEL"
+          "name": "SÁNCHEZ GARCÍA IRMA RAQUEL"
         },
         {
           "id": "ginecologia-2-participante-121",
-          "name": "ROBLES FEREGRINO MARIA CECILIA"
+          "name": "ROBLES FEREGRINO MARÍA CECILIA"
         },
         {
           "id": "ginecologia-2-participante-122",
@@ -499,11 +499,11 @@
         },
         {
           "id": "ginecologia-2-participante-124",
-          "name": "LOPEZ ORDAZ ANGELA"
+          "name": "LÓPEZ ORDAZ ANGELA"
         },
         {
           "id": "ginecologia-2-participante-125",
-          "name": "HERNANDEZ JUAREZ MIGUEL ANGEL"
+          "name": "HERNÁNDEZ JUÁREZ MIGUEL ÁNGEL"
         },
         {
           "id": "ginecologia-2-participante-126",
@@ -515,7 +515,7 @@
         },
         {
           "id": "ginecologia-2-participante-128",
-          "name": "PEREZ CORNELIO RUBEN"
+          "name": "PÉREZ CORNELIO RUBÉN"
         },
         {
           "id": "ginecologia-2-participante-129",
@@ -523,23 +523,23 @@
         },
         {
           "id": "ginecologia-2-participante-130",
-          "name": "ACOSTA VAZQUEZ EDGAR"
+          "name": "ACOSTA VÁZQUEZ EDGAR"
         },
         {
           "id": "ginecologia-2-participante-131",
-          "name": "VELAZQUEZ LARA MARCO ANTONIO"
+          "name": "VELÁZQUEZ LARA MARCO ANTONIO"
         },
         {
           "id": "ginecologia-2-participante-132",
-          "name": "GONZALEZ SEVILLA VICTOR GUADALUPE"
+          "name": "GONZÁLEZ SEVILLA VÍCTOR GUADALUPE"
         },
         {
           "id": "ginecologia-2-participante-133",
-          "name": "GARCIA GIL JOSE RAFAEL"
+          "name": "GARCÍA GIL JOSÉ RAFAEL"
         },
         {
           "id": "ginecologia-2-participante-134",
-          "name": "CASTRO GALVEZ NORMA CAROLINA"
+          "name": "CASTRO GÁLVEZ NORMA CAROLINA"
         },
         {
           "id": "ginecologia-2-participante-135",
@@ -547,11 +547,11 @@
         },
         {
           "id": "ginecologia-2-participante-136",
-          "name": "DIAZ ZURITA GUADALUPE"
+          "name": "DÍAZ ZURITA GUADALUPE"
         },
         {
           "id": "ginecologia-2-participante-137",
-          "name": "CASTELLANOS HERNANDEZ ANGEL OMAR"
+          "name": "CASTELLANOS HERNÁNDEZ ÁNGEL OMAR"
         },
         {
           "id": "ginecologia-2-participante-138",
@@ -559,39 +559,39 @@
         },
         {
           "id": "ginecologia-2-participante-139",
-          "name": "LEON LARA JULIO CESAR"
+          "name": "LEÓN LARA JULIO CÉSAR"
         },
         {
           "id": "ginecologia-2-participante-140",
-          "name": "SANCHEZ DOMINGUEZ AURELIO"
+          "name": "SÁNCHEZ DOMÍNGUEZ AURELIO"
         },
         {
           "id": "ginecologia-2-participante-141",
-          "name": "RAMIREZ PARDO JOSHUA AARON"
+          "name": "RAMÍREZ PARDO JOSHUA AARON"
         },
         {
           "id": "ginecologia-2-participante-142",
-          "name": "LAYNEZ OSORIO BRILLANTE RUBI"
+          "name": "LAYNEZ OSORIO BRILLANTE RUBÍ"
         },
         {
           "id": "ginecologia-2-participante-143",
-          "name": "GOMEZ HERNANDEZ ELIZABETH"
+          "name": "GÓMEZ HERNÁNDEZ ELIZABETH"
         },
         {
           "id": "ginecologia-2-participante-144",
-          "name": "CRUZ PEREZ CARLOS ENRIQUE"
+          "name": "CRUZ PÉREZ CARLOS ENRIQUE"
         },
         {
           "id": "ginecologia-2-participante-145",
-          "name": "PINEDA LOPEZ TANIA DEL CARMEN"
+          "name": "PINEDA LÓPEZ TANIA DEL CARMEN"
         },
         {
           "id": "ginecologia-2-participante-146",
-          "name": "MIRANDA GUZMAN LORENA"
+          "name": "MIRANDA GUZMÁN LORENA"
         },
         {
           "id": "ginecologia-2-participante-147",
-          "name": "DE DIOS LOPEZ JESUS MANUEL"
+          "name": "DE DIOS LÓPEZ JESÚS MANUEL"
         },
         {
           "id": "ginecologia-2-participante-148",
@@ -601,8 +601,8 @@
       "presentations": [
         {
           "id": "ginecologia-2-ppi-01",
-          "title": "PPI -Acosta Hurtado Alexandra",
-          "doctor": "Dr.:Acosta Hurtado Alexandra",
+          "title": "PPI - ACOSTA HURTADO ALEXANDRA",
+          "doctor": "Dr.: Acosta Hurtado Alexandra",
           "sede": "Mexicali, Baja California",
           "especialidad": "Ginecología OB",
           "categoria": "VIP",
@@ -612,8 +612,8 @@
         },
         {
           "id": "ginecologia-2-ppi-02",
-          "title": "PPI -Fernández Huerta Verónica",
-          "doctor": "Dr.:Fernández Huerta Verónica",
+          "title": "PPI - FERNANDEZ HUERTA VERONICA",
+          "doctor": "Dr.: Fernández Huerta Verónica",
           "sede": "Mexicali, Baja California",
           "especialidad": "Ginecología OB",
           "categoria": "VIP",
@@ -623,8 +623,8 @@
         },
         {
           "id": "ginecologia-2-ppi-03",
-          "title": "PPI -Barkley Velásquez Víctor Guillermo",
-          "doctor": "Dr.:Barkley Velásquez Víctor Guillermo",
+          "title": "PPI - BARKLEY VELASQUEZ VICTOR GUILLERMO",
+          "doctor": "Dr.: Barkley Velásquez Víctor Guillermo",
           "sede": "Centro, Tabasco",
           "especialidad": "Cirugía",
           "categoria": "VIP",
@@ -634,10 +634,10 @@
         },
         {
           "id": "ginecologia-2-ppi-04",
-          "title": "PPI -Zarco Valdez José Luis",
-          "doctor": "Dr.:Zarco Valdez José Luis",
+          "title": "PPI - ZARCO VALDEZ JOSE LUIS",
+          "doctor": "Dr.: Zarco Valdez José Luis",
           "sede": "Toluca, Estado de México",
-          "especialidad": "Ginecología Obstetricia",
+          "especialidad": "Ginecología OB",
           "categoria": "VIP",
           "topics": [],
           "image": "",
@@ -645,8 +645,8 @@
         },
         {
           "id": "ginecologia-2-ppi-05",
-          "title": "PPI -Alvarado Castro David Omar",
-          "doctor": "Dr.:Alvarado Castro David Omar",
+          "title": "PPI - ALVARADO CASTRO DAVID OMAR",
+          "doctor": "Dr.: Alvarado Castro David Omar",
           "sede": "Xochimilco, Ciudad de México",
           "especialidad": "Medicina General",
           "categoria": "VIP",
@@ -656,10 +656,10 @@
         },
         {
           "id": "ginecologia-2-ppi-06",
-          "title": "PPI -Vega Campos Rosa Isela",
-          "doctor": "Dr.:Vega Campos Rosa Isela",
+          "title": "PPI - VEGA CAMPOS ROSA ISELA",
+          "doctor": "Dr.: Vega Campos Rosa Isela",
           "sede": "Naucalpan de Juárez, Estado de México",
-          "especialidad": "Ginecología Obstetricia",
+          "especialidad": "Ginecología OB",
           "categoria": "VIP",
           "topics": [],
           "image": "",
@@ -667,8 +667,8 @@
         },
         {
           "id": "ginecologia-2-ppi-07",
-          "title": "PPI -Tarazona Velutini Pablo Felipe",
-          "doctor": "Dr.:Tarazona Velutini Pablo Felipe",
+          "title": "PPI - TARAZONA VELUTINI PABLO FELIPE",
+          "doctor": "Dr.: Tarazona Velutini Pablo Felipe",
           "sede": "Miguel Hidalgo, Ciudad de México",
           "especialidad": "Traumatología Ortopedia",
           "categoria": "VIP",
@@ -678,8 +678,8 @@
         },
         {
           "id": "ginecologia-2-ppi-08",
-          "title": "PPI -Silva Sánchez Verónica",
-          "doctor": "Dr.:Silva Sánchez Verónica",
+          "title": "PPI - SILVA SANCHEZ VERONICA",
+          "doctor": "Dr.: Silva Sánchez Verónica",
           "sede": "Naucalpan de Juárez, Estado de México",
           "especialidad": "Medicina General",
           "categoria": "AA",
@@ -689,8 +689,8 @@
         },
         {
           "id": "ginecologia-2-ppi-09",
-          "title": "PPI -Ortiz Rueda Ericka Rosa",
-          "doctor": "Dr.:Ortiz Rueda Ericka Rosa",
+          "title": "PPI - ORTIZ RUEDA ERICKA ROSA",
+          "doctor": "Dr.: Ortiz Rueda Ericka Rosa",
           "sede": "Gustavo A. Madero, Ciudad de México",
           "especialidad": "Medicina General",
           "categoria": "VIP",
@@ -700,8 +700,8 @@
         },
         {
           "id": "ginecologia-2-ppi-10",
-          "title": "PPI -Uicab González Francisco Manuel",
-          "doctor": "Dr.:Uicab González Francisco Manuel",
+          "title": "PPI - UICAB GONZALEZ FRANCISCO MANUEL",
+          "doctor": "Dr.: Uicab González Francisco Manuel",
           "sede": "Cuauhtémoc, Ciudad de México",
           "especialidad": "Urología",
           "categoria": "AA",
@@ -711,8 +711,8 @@
         },
         {
           "id": "ginecologia-2-ppi-11",
-          "title": "PPI -Álvarez Cedeño Mónica",
-          "doctor": "Dr.:Álvarez Cedeño Mónica",
+          "title": "PPI - ALVAREZ CEDEÑO MONICA",
+          "doctor": "Dr.: Álvarez Cedeño Mónica",
           "sede": "Cuauhtémoc, Ciudad de México",
           "especialidad": "Traumatología Ortopedia",
           "categoria": "VIP",
@@ -722,10 +722,10 @@
         },
         {
           "id": "ginecologia-2-ppi-12",
-          "title": "PPI -Carreón Bonilla Raúl",
-          "doctor": "Dr.:Carreón Bonilla Raúl",
+          "title": "PPI - CARREON BONILLA RAUL",
+          "doctor": "Dr.: Carreón Bonilla Raúl",
           "sede": "León, Guanajuato",
-          "especialidad": "Ginecología Obstetricia",
+          "especialidad": "Ginecología OB",
           "categoria": "VIP",
           "topics": [],
           "image": "",
@@ -733,10 +733,10 @@
         },
         {
           "id": "ginecologia-2-ppi-13",
-          "title": "PPI -Acosta Vega Dionisio",
-          "doctor": "Dr.:Acosta Vega Dionisio",
+          "title": "PPI - ACOSTA VEGA DIONISIO",
+          "doctor": "Dr.: Acosta Vega Dionisio",
           "sede": "Cuauhtémoc, Ciudad de México",
-          "especialidad": "Ginecología Obstetricia",
+          "especialidad": "Ginecología OB",
           "categoria": "AA",
           "topics": [],
           "image": "",
@@ -744,8 +744,8 @@
         },
         {
           "id": "ginecologia-2-ppi-14",
-          "title": "PPI -Tejeda Sánchez Javier",
-          "doctor": "Dr.:Tejeda Sánchez Javier",
+          "title": "PPI - TEJEDA SANCHEZ JAVIER",
+          "doctor": "Dr.: Tejeda Sánchez Javier",
           "sede": "Centro, Tabasco",
           "especialidad": "Medicina General",
           "categoria": "AA",
@@ -755,8 +755,8 @@
         },
         {
           "id": "ginecologia-2-ppi-15",
-          "title": "PPI -Chapa Sánchez César",
-          "doctor": "Dr.:Chapa Sánchez César",
+          "title": "PPI - CHAPA SANCHEZ CESAR",
+          "doctor": "Dr.: Chapa Sánchez César",
           "sede": "Monterrey, Nuevo León",
           "especialidad": "Medicina General",
           "categoria": "VIP",
@@ -766,8 +766,8 @@
         },
         {
           "id": "ginecologia-2-ppi-16",
-          "title": "PPI -Ordorica Cervantes Carlos",
-          "doctor": "Dr.:Ordorica Cervantes Carlos",
+          "title": "PPI - ORDORICA CERVANTES CARLOS",
+          "doctor": "Dr.: Ordorica Cervantes Carlos",
           "sede": "Macuspana, Tabasco",
           "especialidad": "Ginecología OB",
           "categoria": "AA",
@@ -777,8 +777,8 @@
         },
         {
           "id": "ginecologia-2-ppi-17",
-          "title": "PPI -López Acevedo Juan Carlos",
-          "doctor": "Dr.:López Acevedo Juan Carlos",
+          "title": "PPI - LOPEZ ACEVEDO JUAN CARLOS",
+          "doctor": "Dr.: López Acevedo Juan Carlos",
           "sede": "Monterrey, Nuevo León",
           "especialidad": "Medicina General",
           "categoria": "VIP",
@@ -788,8 +788,8 @@
         },
         {
           "id": "ginecologia-2-ppi-18",
-          "title": "PPI -Torres Saunders Carlos",
-          "doctor": "Dr.:Torres Saunders Carlos",
+          "title": "PPI - TORRES SAUNDERS CARLOS",
+          "doctor": "Dr.: Torres Saunders Carlos",
           "sede": "Miguel Hidalgo, Ciudad de México",
           "especialidad": "Urología",
           "categoria": "VIP",
@@ -799,8 +799,8 @@
         },
         {
           "id": "ginecologia-2-ppi-19",
-          "title": "PPI -Espinosa Berrones Amparo Esmanyul",
-          "doctor": "Dr.:Espinosa Berrones Amparo Esmanyul",
+          "title": "PPI - ESPINOSA BERRONES AMPARO ESMANYUL",
+          "doctor": "Dr.: Espinosa Berrones Amparo Esmanyul",
           "sede": "Benito Juárez, Ciudad de México",
           "especialidad": "Endocrinología",
           "categoria": "VIP",
@@ -810,8 +810,8 @@
         },
         {
           "id": "ginecologia-2-ppi-20",
-          "title": "PPI -Gutiérrez Constante Sara",
-          "doctor": "Dr.:Gutiérrez Constante Sara",
+          "title": "PPI - GUTIERREZ CONSTANTE SARA",
+          "doctor": "Dr.: Gutiérrez Constante Sara",
           "sede": "León, Guanajuato",
           "especialidad": "Ginecología OB",
           "categoria": "VIP",
@@ -821,8 +821,8 @@
         },
         {
           "id": "ginecologia-2-ppi-21",
-          "title": "PPI -Lara Quiroz Gustavo",
-          "doctor": "Dr.:Lara Quiroz Gustavo",
+          "title": "PPI - LARA QUIROZ GUSTAVO",
+          "doctor": "Dr.: Lara Quiroz Gustavo",
           "sede": "León, Guanajuato",
           "especialidad": "Medicina General",
           "categoria": "VIP",
@@ -835,16 +835,1200 @@
     },
     {
       "id": "modulo-2",
-      "name": "Módulo 2",
-      "participants": [],
-      "presentations": [],
-      "history": []
+      "name": "Ginecología 1",
+      "participants": [
+        {
+          "id": "ginecologia-1-participante-001",
+          "name": "DE LA LLAVE DE LA MORA CARLOS GEOVANNI"
+        },
+        {
+          "id": "ginecologia-1-participante-002",
+          "name": "GARRIDO RODRÍGUEZ ALVARO"
+        },
+        {
+          "id": "ginecologia-1-participante-003",
+          "name": "HERRERA MARTÍNEZ MARÍA TERESA"
+        },
+        {
+          "id": "ginecologia-1-participante-004",
+          "name": "BECERRA FUENTES CÉSAR ENRIQUE"
+        },
+        {
+          "id": "ginecologia-1-participante-005",
+          "name": "SORIANO GARCÍA ERNESTO ENRIQUE"
+        },
+        {
+          "id": "ginecologia-1-participante-006",
+          "name": "ORTEGA SÁNCHEZ GRISELDA"
+        },
+        {
+          "id": "ginecologia-1-participante-007",
+          "name": "MELGOZA CHÁVEZ CARLOS RAFAEL"
+        },
+        {
+          "id": "ginecologia-1-participante-008",
+          "name": "NORIEGA MANCILLA ALEJANDRO VICENTE"
+        },
+        {
+          "id": "ginecologia-1-participante-009",
+          "name": "GARCÍA SAMPERIO ALBERTO ALAM"
+        },
+        {
+          "id": "ginecologia-1-participante-010",
+          "name": "FLORES MARTÍNEZ FRANCISCO JAVIER"
+        },
+        {
+          "id": "ginecologia-1-participante-011",
+          "name": "ESTRADA ZAVALA JOSÉ LUIS"
+        },
+        {
+          "id": "ginecologia-1-participante-012",
+          "name": "RODRÍGUEZ RIVERA MARTHA ROSBY"
+        },
+        {
+          "id": "ginecologia-1-participante-013",
+          "name": "ROMERO SOLÍS GABRIELA"
+        },
+        {
+          "id": "ginecologia-1-participante-014",
+          "name": "PAREDES GONZÁLEZ KARINA"
+        },
+        {
+          "id": "ginecologia-1-participante-015",
+          "name": "MILIAR GARCÍA LILIA"
+        },
+        {
+          "id": "ginecologia-1-participante-016",
+          "name": "AGUILAR TRONCOSO JOSÉ ALBERTO"
+        },
+        {
+          "id": "ginecologia-1-participante-017",
+          "name": "MORALES LÓPEZ MASIEL"
+        },
+        {
+          "id": "ginecologia-1-participante-018",
+          "name": "PONCE PEÑA OLGA"
+        },
+        {
+          "id": "ginecologia-1-participante-019",
+          "name": "RODRÍGUEZ GÓMEZ GUADALUPE MARITZA"
+        },
+        {
+          "id": "ginecologia-1-participante-020",
+          "name": "JIMÉNEZ RODRÍGUEZ LUIS JOAQUÍN"
+        },
+        {
+          "id": "ginecologia-1-participante-021",
+          "name": "BRIONES RODRÍGUEZ ROBERTO"
+        },
+        {
+          "id": "ginecologia-1-participante-022",
+          "name": "VALTIERRA ROMERO MÓNICA LORENA"
+        },
+        {
+          "id": "ginecologia-1-participante-023",
+          "name": "SEGOVIA ARMENTA JOSÉ ERICK"
+        },
+        {
+          "id": "ginecologia-1-participante-024",
+          "name": "LEO CARMONA SILVIA FA"
+        },
+        {
+          "id": "ginecologia-1-participante-025",
+          "name": "SALVADOR CAMACHO JOAQUÍN"
+        },
+        {
+          "id": "ginecologia-1-participante-026",
+          "name": "RESÉNDIZ VILLASEÑOR LIZBETH LILIAN"
+        },
+        {
+          "id": "ginecologia-1-participante-027",
+          "name": "SORIANO VIDRIO LEEROY IRVING"
+        },
+        {
+          "id": "ginecologia-1-participante-028",
+          "name": "CASTRO MIÑÓN LAURA"
+        },
+        {
+          "id": "ginecologia-1-participante-029",
+          "name": "MARTÍNEZ ALCANTAR NOÉ BULMARO"
+        },
+        {
+          "id": "ginecologia-1-participante-030",
+          "name": "ARIAS BELTRÁN ERICK MAURICIO"
+        },
+        {
+          "id": "ginecologia-1-participante-031",
+          "name": "REYNA WALLS DAVID AUGUSTO"
+        },
+        {
+          "id": "ginecologia-1-participante-032",
+          "name": "SÁNCHEZ DONATO UBALDO"
+        },
+        {
+          "id": "ginecologia-1-participante-033",
+          "name": "RODRÍGUEZ PALACIOS ANELSY"
+        },
+        {
+          "id": "ginecologia-1-participante-034",
+          "name": "PACHECO VEGA ROCÍO"
+        },
+        {
+          "id": "ginecologia-1-participante-035",
+          "name": "LAGUNAS CORONA MA. ELENA"
+        },
+        {
+          "id": "ginecologia-1-participante-036",
+          "name": "CONTRERAS GARCÍA CÁNDIDO"
+        },
+        {
+          "id": "ginecologia-1-participante-037",
+          "name": "GUZMÁN MARTÍNEZ JOSÉ LUIS"
+        },
+        {
+          "id": "ginecologia-1-participante-038",
+          "name": "RAMÍREZ MARTÍNEZ NANCY"
+        },
+        {
+          "id": "ginecologia-1-participante-039",
+          "name": "RUIZ MURILLO ALFREDO ALFONSO"
+        },
+        {
+          "id": "ginecologia-1-participante-040",
+          "name": "FUENTES SÁNCHEZ IGNACIO"
+        },
+        {
+          "id": "ginecologia-1-participante-041",
+          "name": "GARCÍA ALBA LETICIA"
+        },
+        {
+          "id": "ginecologia-1-participante-042",
+          "name": "VARELA MORA NORMA"
+        },
+        {
+          "id": "ginecologia-1-participante-043",
+          "name": "LARA CABAÑAS ATENAS"
+        },
+        {
+          "id": "ginecologia-1-participante-044",
+          "name": "VEGA RODRÍGUEZ MÓNICA"
+        },
+        {
+          "id": "ginecologia-1-participante-045",
+          "name": "URBINA DE LA TORRE RODOLFO"
+        },
+        {
+          "id": "ginecologia-1-participante-046",
+          "name": "BECERRIL PAZARÁN ALICIA DEL CARMEN"
+        },
+        {
+          "id": "ginecologia-1-participante-047",
+          "name": "CASTRO SÁNCHEZ GABRIELA"
+        },
+        {
+          "id": "ginecologia-1-participante-048",
+          "name": "GÁLVEZ GONZÁLEZ GABRIELA VIRGINIA"
+        },
+        {
+          "id": "ginecologia-1-participante-049",
+          "name": "HERNÁNDEZ QUINTANAR GEORGINA"
+        },
+        {
+          "id": "ginecologia-1-participante-050",
+          "name": "OSORIO LÓPEZ LEONOR JASIBETH"
+        },
+        {
+          "id": "ginecologia-1-participante-051",
+          "name": "ORTEGA MADRIGAL ARIANA"
+        },
+        {
+          "id": "ginecologia-1-participante-052",
+          "name": "ALARCÓN ROGEL LILIANA"
+        },
+        {
+          "id": "ginecologia-1-participante-053",
+          "name": "ROSAS HERNÁNDEZ SORAYA"
+        },
+        {
+          "id": "ginecologia-1-participante-054",
+          "name": "MEZA JUÁREZ ALITZEL"
+        },
+        {
+          "id": "ginecologia-1-participante-055",
+          "name": "FLORES SIMÓN DIANA"
+        },
+        {
+          "id": "ginecologia-1-participante-056",
+          "name": "NAVARRETE VALADEZ CLAUDIA ABRIL"
+        },
+        {
+          "id": "ginecologia-1-participante-057",
+          "name": "GARIBAY PÉREZ VERÓNICA"
+        },
+        {
+          "id": "ginecologia-1-participante-058",
+          "name": "BERNAL PRECIADO ELENA MONSERRAT"
+        },
+        {
+          "id": "ginecologia-1-participante-059",
+          "name": "MEDINA GAVIÑO CARLOS IVÁN"
+        },
+        {
+          "id": "ginecologia-1-participante-060",
+          "name": "JIMÉNEZ CORTEZ EDGAR MANUEL"
+        },
+        {
+          "id": "ginecologia-1-participante-061",
+          "name": "FUENTES GÓMEZ ROSA ILIANA"
+        },
+        {
+          "id": "ginecologia-1-participante-062",
+          "name": "CARTAS TREJO NALLELY"
+        },
+        {
+          "id": "ginecologia-1-participante-063",
+          "name": "TORRES OROZCO HERNÁNDEZ JULIETA"
+        },
+        {
+          "id": "ginecologia-1-participante-064",
+          "name": "VERA ZUMAYA PATRICIA"
+        },
+        {
+          "id": "ginecologia-1-participante-065",
+          "name": "GARCÍA BORBÓN LUIS FERNANDO"
+        },
+        {
+          "id": "ginecologia-1-participante-066",
+          "name": "GARCÍA ZÚÑIGA EDUARDO ALEJANDRO"
+        },
+        {
+          "id": "ginecologia-1-participante-067",
+          "name": "GONZÁLEZ CRUZ MARIANO BERNARDO"
+        },
+        {
+          "id": "ginecologia-1-participante-068",
+          "name": "COMPEÁN GAMA MARICELA"
+        },
+        {
+          "id": "ginecologia-1-participante-069",
+          "name": "SORIA DÁVALOS JEANETTE"
+        },
+        {
+          "id": "ginecologia-1-participante-070",
+          "name": "ONTIVEROS ABUNDEZ RUTH TERESA"
+        },
+        {
+          "id": "ginecologia-1-participante-071",
+          "name": "GÓMEZ MARTÍNEZ LUZ GABRIELA"
+        },
+        {
+          "id": "ginecologia-1-participante-072",
+          "name": "TORRES VALDÉS JULIO CÉSAR"
+        },
+        {
+          "id": "ginecologia-1-participante-073",
+          "name": "LÓPEZ MENDOZA BRENDA LIZETH"
+        },
+        {
+          "id": "ginecologia-1-participante-074",
+          "name": "MORALES LÓPEZ JUDITH BERENICE"
+        },
+        {
+          "id": "ginecologia-1-participante-075",
+          "name": "MARTÍNEZ ALVARADO FATIMA LUCILA"
+        },
+        {
+          "id": "ginecologia-1-participante-076",
+          "name": "MUÑOZ SALGADO ROGELIO"
+        },
+        {
+          "id": "ginecologia-1-participante-077",
+          "name": "FRANCO GARCÍA ÓSCAR ALEJANDRO"
+        },
+        {
+          "id": "ginecologia-1-participante-078",
+          "name": "ROBLES SALMAN GABRIEL ALEJANDRO"
+        },
+        {
+          "id": "ginecologia-1-participante-079",
+          "name": "ÁVILA SOLIZ ALEJANDRA"
+        },
+        {
+          "id": "ginecologia-1-participante-080",
+          "name": "AMBRIZ LICEA SINTHIA MADELINE"
+        },
+        {
+          "id": "ginecologia-1-participante-081",
+          "name": "ROMERO CRUZ LUZ ELENA"
+        },
+        {
+          "id": "ginecologia-1-participante-082",
+          "name": "MARTÍNEZ GARZA ARTURO"
+        },
+        {
+          "id": "ginecologia-1-participante-083",
+          "name": "CRUZ RODRÍGUEZ JANETH MARISOL"
+        },
+        {
+          "id": "ginecologia-1-participante-084",
+          "name": "SIFUENTES MONROY ROSA ELVIRA"
+        },
+        {
+          "id": "ginecologia-1-participante-085",
+          "name": "ONOFRE DE LEÓN NELLY PATRICIA"
+        },
+        {
+          "id": "ginecologia-1-participante-086",
+          "name": "CABRERA HERNÁNDEZ MIGUEL ÁNGEL"
+        },
+        {
+          "id": "ginecologia-1-participante-087",
+          "name": "MARTÍNEZ RINCÓN MINERVA"
+        },
+        {
+          "id": "ginecologia-1-participante-088",
+          "name": "CABELLO BÁEZ MARÍA DE LOS ANGELES"
+        },
+        {
+          "id": "ginecologia-1-participante-089",
+          "name": "GARCÍA ESQUIVEL MARIEL ESTEFANIA"
+        },
+        {
+          "id": "ginecologia-1-participante-090",
+          "name": "GUERRERO PLATA SANDRA VERÓNICA"
+        },
+        {
+          "id": "ginecologia-1-participante-091",
+          "name": "RODRÍGUEZ PÉREZ OMAR"
+        },
+        {
+          "id": "ginecologia-1-participante-092",
+          "name": "GONZÁLEZ DÍAZ ROSA MARÍA"
+        },
+        {
+          "id": "ginecologia-1-participante-093",
+          "name": "CÁZARES SAN MIGUEL JESÚS ÁNGEL"
+        },
+        {
+          "id": "ginecologia-1-participante-094",
+          "name": "ZÚÑIGA RODRÍGUEZ DAVID"
+        },
+        {
+          "id": "ginecologia-1-participante-095",
+          "name": "ZARCO SOTO NARCISO"
+        },
+        {
+          "id": "ginecologia-1-participante-096",
+          "name": "RAMÍREZ CÁRDENAS MARÍA DEL CARMEN"
+        },
+        {
+          "id": "ginecologia-1-participante-097",
+          "name": "RIVERA ARMENDÁRIZ CLAUDIA"
+        },
+        {
+          "id": "ginecologia-1-participante-098",
+          "name": "JIMÉNEZ ESCAMILLA MARÍA EVELYN"
+        },
+        {
+          "id": "ginecologia-1-participante-099",
+          "name": "TOLENTINO SALAS NUBIA MARGARITA"
+        },
+        {
+          "id": "ginecologia-1-participante-100",
+          "name": "GARCÍA MARTÍNEZ MARTHA YADIRA"
+        },
+        {
+          "id": "ginecologia-1-participante-101",
+          "name": "VILLA VERDUZCO VÍCTOR ANDRÉS"
+        },
+        {
+          "id": "ginecologia-1-participante-102",
+          "name": "ARMENTA GASTELUM MARIO RAÚL"
+        },
+        {
+          "id": "ginecologia-1-participante-103",
+          "name": "BÓRQUEZ CARRASCO OBETD MIZAEL"
+        },
+        {
+          "id": "ginecologia-1-participante-104",
+          "name": "RAMOS FRAUSTO EDGAR EMMANUEL"
+        },
+        {
+          "id": "ginecologia-1-participante-105",
+          "name": "RÍOS LIZARRAGA RAÚL"
+        },
+        {
+          "id": "ginecologia-1-participante-106",
+          "name": "CALDERA FONG KARLA"
+        },
+        {
+          "id": "ginecologia-1-participante-107",
+          "name": "ÁLVAREZ MARTÍNEZ MANUEL ALBERTO"
+        },
+        {
+          "id": "ginecologia-1-participante-108",
+          "name": "MOLINA BUSTILLOS JAIME CECILIO"
+        },
+        {
+          "id": "ginecologia-1-participante-109",
+          "name": "BORUNDA LEOPOLDO SALVADOR"
+        },
+        {
+          "id": "ginecologia-1-participante-110",
+          "name": "MENDOZA HERNÁNDEZ GABRIEL"
+        },
+        {
+          "id": "ginecologia-1-participante-111",
+          "name": "MARTÍNEZ CHAIREZ MARÍA GUADALUPE"
+        },
+        {
+          "id": "ginecologia-1-participante-112",
+          "name": "CRUZ SEGURA JUAN ROSENDO"
+        },
+        {
+          "id": "ginecologia-1-participante-113",
+          "name": "GARCÍA CALDERÓN MARÍA ELENA"
+        },
+        {
+          "id": "ginecologia-1-participante-114",
+          "name": "LINDORO SALAZAR KARINA"
+        },
+        {
+          "id": "ginecologia-1-participante-115",
+          "name": "AHUMADA LOZOYA JAIME RAMÓN"
+        },
+        {
+          "id": "ginecologia-1-participante-116",
+          "name": "VALENZUELA VALLE EVENECER"
+        },
+        {
+          "id": "ginecologia-1-participante-117",
+          "name": "VALENZUELA GONZÁLEZ CECILIA EUNICE"
+        },
+        {
+          "id": "ginecologia-1-participante-118",
+          "name": "RÍOS HERNÁNDEZ NANCY"
+        },
+        {
+          "id": "ginecologia-1-participante-119",
+          "name": "RODRÍGUEZ CENICEROS JESÚS ALFONSO"
+        },
+        {
+          "id": "ginecologia-1-participante-120",
+          "name": "VALENCIA UREÑA MIGUEL ÁNGEL"
+        },
+        {
+          "id": "ginecologia-1-participante-121",
+          "name": "GALLEGOS GARCÍA CARLOS MARIO"
+        },
+        {
+          "id": "ginecologia-1-participante-122",
+          "name": "CRUZ JUÁREZ CINDY"
+        },
+        {
+          "id": "ginecologia-1-participante-123",
+          "name": "JUÁREZ ZAPATA LETICIA"
+        },
+        {
+          "id": "ginecologia-1-participante-124",
+          "name": "MORALES GARCÍA JULIO CÉSAR"
+        },
+        {
+          "id": "ginecologia-1-participante-125",
+          "name": "JIMÉNEZ GARCÍA VÍCTOR"
+        },
+        {
+          "id": "ginecologia-1-participante-126",
+          "name": "CABRERA GUZMÁN XYMENA"
+        },
+        {
+          "id": "ginecologia-1-participante-127",
+          "name": "SÁNCHEZ CABRERA AGLAE"
+        },
+        {
+          "id": "ginecologia-1-participante-128",
+          "name": "JIMÉNEZ LESTRADE CARLOS"
+        },
+        {
+          "id": "ginecologia-1-participante-129",
+          "name": "GARCÍA ALTAMIRANO JORGE"
+        },
+        {
+          "id": "ginecologia-1-participante-130",
+          "name": "BURGUETE ESPINOSA GUILLERMO DE JESÚS"
+        },
+        {
+          "id": "ginecologia-1-participante-131",
+          "name": "MONTERO CUEVAS CLARIBEL"
+        },
+        {
+          "id": "ginecologia-1-participante-132",
+          "name": "ORTIZ ESPINOZA MARIANA"
+        },
+        {
+          "id": "ginecologia-1-participante-133",
+          "name": "JIMÉNEZ VÁZQUEZ BERLIN YABEL"
+        },
+        {
+          "id": "ginecologia-1-participante-134",
+          "name": "MALDONADO BERNES JORGE LUIS"
+        },
+        {
+          "id": "ginecologia-1-participante-135",
+          "name": "GODOY CHIMELY HYPATYA"
+        },
+        {
+          "id": "ginecologia-1-participante-136",
+          "name": "FOMPEROSA ROSALES GREGORIO DE JESÚS"
+        },
+        {
+          "id": "ginecologia-1-participante-137",
+          "name": "PÉREZ LEDO MARÍA ALICIA"
+        },
+        {
+          "id": "ginecologia-1-participante-138",
+          "name": "EROSA GONZÁLEZ LUCILA GABRIELA"
+        },
+        {
+          "id": "ginecologia-1-participante-139",
+          "name": "NOVELO AYUSO ERICK ERNESTO"
+        },
+        {
+          "id": "ginecologia-1-participante-140",
+          "name": "SÁNCHEZ RAMÍREZ DEYSI SUSANA"
+        },
+        {
+          "id": "ginecologia-1-participante-141",
+          "name": "GONZÁLEZ CHACÓN LUIS EDUARDO"
+        },
+        {
+          "id": "ginecologia-1-participante-142",
+          "name": "LEÓN DE PAZ ROSA JILIAN"
+        },
+        {
+          "id": "ginecologia-1-participante-143",
+          "name": "MARTÍNEZ RUIZ HUGO"
+        },
+        {
+          "id": "ginecologia-1-participante-144",
+          "name": "CARRASCO JIMÉNEZ MINERVA"
+        },
+        {
+          "id": "ginecologia-1-participante-145",
+          "name": "REYES SÁNCHEZ MARIO LEONCIO"
+        },
+        {
+          "id": "ginecologia-1-participante-146",
+          "name": "PÉREZ ROSADO DANIEL JOEL"
+        },
+        {
+          "id": "ginecologia-1-participante-147",
+          "name": "VELÁZQUEZ MANCILLA EDALY MAYOLY"
+        },
+        {
+          "id": "ginecologia-1-participante-148",
+          "name": "JIMÉNEZ LÓPEZ MARTHA SUSANA"
+        }
+      ],
+      "presentations": [
+        {
+          "id": "ginecologia-1-ppi-01",
+          "title": "PPI - Robles Señkowsky Alejandro",
+          "doctor": "Dr.: Robles Señkowsky Alejandro",
+          "sede": "Zapopan, Jalisco",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 1.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-02",
+          "title": "PPI - Morfín Chávez José Alberto",
+          "doctor": "Dr.: Morfín Chávez José Alberto",
+          "sede": "Zapopan, Jalisco",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 2.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-03",
+          "title": "PPI - Guerrero Sánchez Rosa Maria",
+          "doctor": "Dr.: Guerrero Sánchez Rosa Maria",
+          "sede": "Reynosa, Tamaulipas",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 3.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-04",
+          "title": "PPI - Almazán Mata Osvaldo",
+          "doctor": "Dr.: Almazán Mata Osvaldo",
+          "sede": "Matamoros, Tamaulipas",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 4.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-05",
+          "title": "PPI - Sánchez Ruiz María Guadalupe",
+          "doctor": "Dr.: Sánchez Ruiz María Guadalupe",
+          "sede": "Tlaxcala, Tlaxcala",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 5.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-06",
+          "title": "PPI - Rueles Silva Diana Gabriela",
+          "doctor": "Dr.: Rueles Silva Diana Gabriela",
+          "sede": "Puebla, Puebla",
+          "especialidad": "Ginecología OB",
+          "categoria": "AA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 6.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-07",
+          "title": "PPI - Chagolla Vargas Paulina Yolanda",
+          "doctor": "Dr.: Chagolla Vargas Paulina Yolanda",
+          "sede": "Nezahualcóyotl, Estado de México",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 7.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-08",
+          "title": "PPI - Chávez Herrera Erika Del Carmen",
+          "doctor": "Dr.: Chávez Herrera Erika Del Carmen",
+          "sede": "Torreón, Coahuila",
+          "especialidad": "Ginecología OB",
+          "categoria": "AA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 8.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-09",
+          "title": "PPI - Luján Ibañez Julio Alberto",
+          "doctor": "Dr.: Luján Ibañez Julio Alberto",
+          "sede": "Solidaridad, Quintana Roo",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 9.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-10",
+          "title": "PPI - Aguilera Luévano Ariadna",
+          "doctor": "Dr.: Aguilera Luévano Ariadna",
+          "sede": "Silao, Guanajuato",
+          "especialidad": "Ginecología OB",
+          "categoria": "AA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 10.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-11",
+          "title": "PPI - Aguilar Campuzano César",
+          "doctor": "Dr.: Aguilar Campuzano César",
+          "sede": "Morelia, Michoacán",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 11.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-12",
+          "title": "PPI - Palafox Cervantes Iván",
+          "doctor": "Dr.: Palafox Cervantes Iván",
+          "sede": "Córdoba, Veracruz",
+          "especialidad": "Ginecología OB",
+          "categoria": "",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 12.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-13",
+          "title": "PPI - De León Peguero Norma Gisel",
+          "doctor": "Dr.: De León Peguero Norma Gisel",
+          "sede": "Guadalajara, Jalisco",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 13.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-14",
+          "title": "PPI - Ballesteros Manzo Alberto",
+          "doctor": "Dr.: Ballesteros Manzo Alberto",
+          "sede": "Guadalajara, Jalisco",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 14.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-15",
+          "title": "PPI - Contreras Sánchez Daniela",
+          "doctor": "Dr.: Contreras Sánchez Daniela",
+          "sede": "Guadalajara, Jalisco",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 15.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-16",
+          "title": "PPI - Ayoub Coto José Majid",
+          "doctor": "Dr.: Ayoub Coto José Majid",
+          "sede": "Torreón, Coahuila",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 16.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-17",
+          "title": "PPI - Báez Tiburcio Adriana",
+          "doctor": "Dr.: Báez Tiburcio Adriana",
+          "sede": "Perote, Veracruz",
+          "especialidad": "Ginecología OB",
+          "categoria": "AA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 17.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-18",
+          "title": "PPI - Careaga Benítez Ricardo",
+          "doctor": "Dr.: Careaga Benítez Ricardo",
+          "sede": "Miguel Hidalgo, Ciudad de México",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 18.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-19",
+          "title": "PPI - Vea Pérez Enrique",
+          "doctor": "Dr.: Vea Pérez Enrique",
+          "sede": "Querétaro, Querétaro",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 19.jpg"
+        },
+        {
+          "id": "ginecologia-1-ppi-20",
+          "title": "PPI - Vallejo López María Jesús",
+          "doctor": "Dr.: Vallejo López María Jesús",
+          "sede": "León, Guanajuato",
+          "especialidad": "Ginecología OB",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/ginecologia-1/GINECO 1 recortadas/PPI 20.jpg"
+        }
+      ],
+      "history": [
+        {
+          "id": "ronda-mqppq4cp-nmb38d",
+          "round": 1,
+          "participantName": "SÁNCHEZ DONATO UBALDO",
+          "presentationTitle": "PPI - Palafox Cervantes Iván",
+          "createdAt": "2026-06-22T21:13:34.345Z"
+        }
+      ]
     },
     {
       "id": "modulo-3",
-      "name": "Módulo 3",
-      "participants": [],
-      "presentations": [],
+      "name": "SNC",
+      "participants": [
+        {
+          "id": "snc-participante-001",
+          "name": "LUJÁN VERÁSTEGUI MYRNA LETICIA"
+        },
+        {
+          "id": "snc-participante-002",
+          "name": "STEVENSON ALEXANDER ISHEL ARLETTE"
+        },
+        {
+          "id": "snc-participante-003",
+          "name": "MATA LUNA DIANA ANGÉLICA"
+        },
+        {
+          "id": "snc-participante-004",
+          "name": "ZÚÑIGA QUIROZ JAIR EDDELL"
+        },
+        {
+          "id": "snc-participante-005",
+          "name": "TORRES LEMUS KARLA YAHEL"
+        },
+        {
+          "id": "snc-participante-006",
+          "name": "TORRES MARTÍNEZ MARÍA MAYELA DEL SAGRADO CORAZÓN DE JESÚS"
+        },
+        {
+          "id": "snc-participante-007",
+          "name": "PEÑA JUÁREZ ALEJANDRA"
+        },
+        {
+          "id": "snc-participante-008",
+          "name": "CRUZ JIMÉNEZ ANA MARÍA"
+        },
+        {
+          "id": "snc-participante-009",
+          "name": "MAYORGA VERGARA MARÍA FERNANDA"
+        },
+        {
+          "id": "snc-participante-010",
+          "name": "ROSALES RODRÍGUEZ JULIETA"
+        },
+        {
+          "id": "snc-participante-011",
+          "name": "ROSALES TORRES PAOLA"
+        },
+        {
+          "id": "snc-participante-012",
+          "name": "ÁLVAREZ UGALDE ITZEL"
+        },
+        {
+          "id": "snc-participante-013",
+          "name": "BALTAZAR ROBLES EMMANUEL ALFONSO"
+        },
+        {
+          "id": "snc-participante-014",
+          "name": "TORRES HERNÁNDEZ VERÓNICA"
+        },
+        {
+          "id": "snc-participante-015",
+          "name": "GONZÁLEZ ALCAZAR GUILLERMO MAURICIO"
+        },
+        {
+          "id": "snc-participante-016",
+          "name": "UH LÓPEZ MARÍA DEL CARMEN"
+        },
+        {
+          "id": "snc-participante-017",
+          "name": "ALFARO LÓPEZ EDGAR GALILEO"
+        },
+        {
+          "id": "snc-participante-018",
+          "name": "PINZÓN AYUSO RODRIGO ALONSO"
+        },
+        {
+          "id": "snc-participante-019",
+          "name": "OJINAGA ARMENDÁRIZ ABELARDO"
+        },
+        {
+          "id": "snc-participante-020",
+          "name": "SEPÚLVEDA LARA RAFAEL"
+        },
+        {
+          "id": "snc-participante-021",
+          "name": "CHÁVEZ NAVARRO MOISÉS"
+        },
+        {
+          "id": "snc-participante-022",
+          "name": "VALENCIA ACEVES MARÍA ELENA"
+        },
+        {
+          "id": "snc-participante-023",
+          "name": "ESPINOZA CHÁVEZ KARLA PAOLA"
+        },
+        {
+          "id": "snc-participante-024",
+          "name": "BERDEJA LUGO JOSÉ JUAN"
+        },
+        {
+          "id": "snc-participante-025",
+          "name": "CORTÉS PÁEZ MARÍA ELENA"
+        },
+        {
+          "id": "snc-participante-026",
+          "name": "ORTIZ HERNÁNDEZ GLORIA CONCEPCIÓN"
+        },
+        {
+          "id": "snc-participante-027",
+          "name": "GALINDO MAGAÑA MARÍA GABRIELA"
+        },
+        {
+          "id": "snc-participante-028",
+          "name": "CASTILLO MUÑIZ ELIZABETH"
+        },
+        {
+          "id": "snc-participante-029",
+          "name": "ORTEGA IBARRA CARLOS"
+        },
+        {
+          "id": "snc-participante-030",
+          "name": "CORTÉS TREVIÑO NANCY VERÓNICA"
+        },
+        {
+          "id": "snc-participante-031",
+          "name": "VILLARREAL OCHOA NOEL"
+        },
+        {
+          "id": "snc-participante-032",
+          "name": "DÍAZ ZAMORA JOSÉ ALBERTO"
+        },
+        {
+          "id": "snc-participante-033",
+          "name": "VIGIL PAYÁN EDNA MILDRED"
+        },
+        {
+          "id": "snc-participante-034",
+          "name": "GARIBAY IBARRA HORACIO"
+        },
+        {
+          "id": "snc-participante-035",
+          "name": "ENCINAS MENDÍVIL ERIKA LUCÍA DEL CARMEN"
+        }
+      ],
+      "presentations": [
+        {
+          "id": "snc-ppi-01",
+          "title": "PPI - Martínez Diaz Valois",
+          "doctor": "Dr.: Martínez Diaz Valois",
+          "sede": "Nezahualcóyotl, Estado de México",
+          "especialidad": "Neurología",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_1.jpg"
+        },
+        {
+          "id": "snc-ppi-02",
+          "title": "PPI - Aguillón Cabañas Natalia",
+          "doctor": "Dr.: Aguillón Cabañas Natalia",
+          "sede": "Torreón, Coahuila",
+          "especialidad": "Neurología",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_2.jpg"
+        },
+        {
+          "id": "snc-ppi-03",
+          "title": "PPI - Aguilera Barragán Marcela",
+          "doctor": "Dr.: Aguilera Barragán Marcela",
+          "sede": "Monterrey, Nuevo León",
+          "especialidad": "Psiquiatría",
+          "categoria": "AAA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_3.jpg"
+        },
+        {
+          "id": "snc-ppi-04",
+          "title": "PPI - Alvarado Leal María Rosa",
+          "doctor": "Dr.: Alvarado Leal María Rosa",
+          "sede": "Monterrey, Nuevo León",
+          "especialidad": "Medicina General",
+          "categoria": "AAA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_4.jpg"
+        },
+        {
+          "id": "snc-ppi-05",
+          "title": "PPI - Acosta Palacio Aníbal Alberto",
+          "doctor": "Dr.: Acosta Palacio Aníbal Alberto",
+          "sede": "Chihuahua, Chihuahua",
+          "especialidad": "Psiquiatría",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_5.jpg"
+        },
+        {
+          "id": "snc-ppi-06",
+          "title": "PPI - Ahumada Curiel Gabriel",
+          "doctor": "Dr.: Ahumada Curiel Gabriel",
+          "sede": "Naucalpan de Juárez, Estado de México",
+          "especialidad": "Psiquiatría",
+          "categoria": "AA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_6.jpg"
+        },
+        {
+          "id": "snc-ppi-07",
+          "title": "PPI - Rivera Sánchez José de Jesús",
+          "doctor": "Dr.: Rivera Sánchez José de Jesús",
+          "sede": "Cuauhtémoc, Ciudad de México",
+          "especialidad": "Geriatría",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_7.jpg"
+        },
+        {
+          "id": "snc-ppi-08",
+          "title": "PPI - Cornelio Nieto José Ovidio",
+          "doctor": "Dr.: Cornelio Nieto José Ovidio",
+          "sede": "Centro, Tabasco",
+          "especialidad": "Neurología",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_8.jpg"
+        },
+        {
+          "id": "snc-ppi-09",
+          "title": "PPI - Barrera Tello Carlos Augusto",
+          "doctor": "Dr.: Barrera Tello Carlos Augusto",
+          "sede": "Mérida, Yucatán",
+          "especialidad": "Pediatría",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_9.jpg"
+        },
+        {
+          "id": "snc-ppi-10",
+          "title": "PPI - Abrego Ruiz Amancio Antonio",
+          "doctor": "Dr.: Abrego Ruiz Amancio Antonio",
+          "sede": "Veracruz, Veracruz",
+          "especialidad": "Psiquiatría",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_10.jpg"
+        },
+        {
+          "id": "snc-ppi-11",
+          "title": "PPI - Cantellano Limón María Victoria",
+          "doctor": "Dr.: Cantellano Limón María Victoria",
+          "sede": "Gustavo A. Madero, Ciudad de México",
+          "especialidad": "Medicina General",
+          "categoria": "AA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_11.jpg"
+        },
+        {
+          "id": "snc-ppi-12",
+          "title": "PPI - Oropeza Canto Dante Bernardo",
+          "doctor": "Dr.: Oropeza Canto Dante Bernardo",
+          "sede": "Atlixco, Puebla",
+          "especialidad": "Neurología",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_12.jpg"
+        },
+        {
+          "id": "snc-ppi-13",
+          "title": "PPI - Carrillo Durante Ernesto",
+          "doctor": "Dr.: Carrillo Durante Ernesto",
+          "sede": "Córdoba, Veracruz",
+          "especialidad": "Psiquiatría",
+          "categoria": "AAA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_13.jpg"
+        },
+        {
+          "id": "snc-ppi-14",
+          "title": "PPI - De La Cruz Estrada Eric",
+          "doctor": "Dr.: De La Cruz Estrada Eric",
+          "sede": "Centro, Tabasco",
+          "especialidad": "Medicina Interna",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_14.jpg"
+        },
+        {
+          "id": "snc-ppi-15",
+          "title": "PPI - Valdez González Erick Iván",
+          "doctor": "Dr.: Valdez González Erick Iván",
+          "sede": "Gustavo A. Madero, Ciudad de México",
+          "especialidad": "Psiquiatría",
+          "categoria": "AAA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_15.jpg"
+        },
+        {
+          "id": "snc-ppi-16",
+          "title": "PPI - Bórquez Arce Humberto Jesús",
+          "doctor": "Dr.: Bórquez Arce Humberto Jesús",
+          "sede": "Tijuana, Baja California",
+          "especialidad": "Neurología",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_16.jpg"
+        },
+        {
+          "id": "snc-ppi-17",
+          "title": "PPI - Cantellano Limón María Victoria",
+          "doctor": "Dr.: Cantellano Limón María Victoria",
+          "sede": "Gustavo A. Madero, Ciudad de México",
+          "especialidad": "Medicina General",
+          "categoria": "AA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_17.jpg"
+        },
+        {
+          "id": "snc-ppi-18",
+          "title": "PPI - Carrillo Durante Ernesto",
+          "doctor": "Dr.: Carrillo Durante Ernesto",
+          "sede": "Córdoba, Veracruz",
+          "especialidad": "Psiquiatría",
+          "categoria": "AAA",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_18.jpg"
+        },
+        {
+          "id": "snc-ppi-19",
+          "title": "PPI - Oropeza Canto Dante Bernardo",
+          "doctor": "Dr.: Oropeza Canto Dante Bernardo",
+          "sede": "Atlixco, Puebla",
+          "especialidad": "Neurología",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_19.jpg"
+        },
+        {
+          "id": "snc-ppi-21",
+          "title": "PPI - De la Cruz Estrada Eric",
+          "doctor": "Dr.: De la Cruz Estrada Eric",
+          "sede": "Reforma, Centro, Tabasco",
+          "especialidad": "Medicina Interna",
+          "categoria": "VIP",
+          "topics": [],
+          "image": "",
+          "imagePath": "assets/images/snc/SNC 2/snc_21.jpg"
+        }
+      ],
       "history": []
     }
   ]
